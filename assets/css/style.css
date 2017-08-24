@@ -91,7 +91,10 @@ h1{
   }
 }
 
-/* background 
+.me{
+	display: none;
+}
+/*background 
 
 body{
 	margin:0;
