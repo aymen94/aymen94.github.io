@@ -1,3 +1,10 @@
+function showHide(id){
+	console.log(id);
+	var idToClass=document.getElementsByClassName(id)[0];
+		hidden('.me');
+	 idToClass.style.display='block';
+}
+
 function clickMe(abc){
 	var v=document.getElementsByClassName(abc);
 	hidden('.progress');
@@ -5,6 +12,7 @@ function clickMe(abc){
 	  v[i].style.display = 'block';
 	}
 }
+
 function hidden(elemnt){
    var hide=document.querySelectorAll(elemnt);
    for(var i=0;i<hide.length;i=i+1){
