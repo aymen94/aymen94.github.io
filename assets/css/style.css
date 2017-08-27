@@ -94,6 +94,42 @@ h1{
 .me{
 	display: none;
 }
+
+/* box */
+
+.box-bottom {
+  background: #fff;
+  padding: 20px
+}
+.box-bottom h3 {
+  color: #000;
+  margin-top: 0
+}
+.box-full {
+ border:1px solid white;
+  padding: 10px;
+}
+.box-full a:hover{
+  display: block;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out 
+}
+.box-bottom span {
+  text-transform: uppercase;
+  color: #666;
+  margin-top: 5px;
+  display: block
+}
+
+.box-top {
+  background-size: cover;
+  background-position: center center;
+  height: 170px;
+  display: block;
+}
+.box-top img {
+  width: 100%;
+}
 /*background 
 
 body{
