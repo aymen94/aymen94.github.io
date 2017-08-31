@@ -42,8 +42,19 @@ h1{
                0 20px 20px rgba(0,0,0,.15);
 }
 
+video { 
+   position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+} 
+
 .jumbotron{
-	background-color: #2196F3;
+	background-color: #039be5;
 	box-shadow: 5px 10px 5px grey;
 	animation-name: bounceInDown;
 	  animation-duration: 1s;
@@ -107,7 +118,7 @@ h1{
 }
 .box-full {
  border:1px solid white;
-  padding: 10px;
+  padding: 2px;
 }
 .box-full a:hover{
   display: block;
