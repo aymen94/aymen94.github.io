@@ -1,7 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Archivo+Black:400);
-body{
-	font-family: 'Archivo Black', sans-serif;
-	margin: auto;
+
+
+html, body { 
+  min-height: 100%; 
+}
+body {
+  font-family: 'Archivo Black', sans-serif;
+  margin: auto;
+  background: #92c7d6;
+  background-image: -webkit-radial-gradient(top, circle cover, #97d0e1, #427388 80%);
+  background-image: -moz-radial-gradient(top, circle cover, #97d0e1, #427388 80%);
+  background-image: -o-radial-gradient(top, circle cover, #97d0e1, #427388 80%);
+  background-image: radial-gradient(top, circle cover, #97d0e1, #427388 80%);
 }
 
 button{
@@ -53,8 +63,10 @@ video {
   z-index: -100;
 } 
 
+
+
 .jumbotron{
-	background-color: #2980b9;
+	background-color: #bdc3c7;
 	box-shadow: 5px 10px 5px grey;
 	animation-name: bounceInDown;
 	  animation-duration: 1s;
@@ -124,7 +136,7 @@ video {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
   transition: all 0.2s ease-in-out 
 }
-.box-bottom span {
+.box-bottom h3 {
   text-transform: uppercase;
   color: #666;
   margin-top: 5px;
