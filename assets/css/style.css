@@ -10,8 +10,6 @@ body {
   background: #92c7d6;
   background-image: -webkit-radial-gradient(top, circle cover, #97d0e1, #427388 80%);
   background-image: -moz-radial-gradient(top, circle cover, #97d0e1, #427388 80%);
-  background-image: -o-radial-gradient(top, circle cover, #97d0e1, #427388 80%);
-  background-image: radial-gradient(top, circle cover, #97d0e1, #427388 80%);
 }
 
 button{
@@ -66,8 +64,9 @@ video {
 
 
 .jumbotron{
-	background-color: #bdc3c7;
-	box-shadow: 5px 10px 5px grey;
+  background-image: -webkit-radial-gradient(top, circle cover, #cfd8dc, #37474f 80%);
+  background-image: -moz-radial-gradient(top, circle cover, #cfd8dc, #37474f 80%);
+	box-shadow: 5px 10px 5px #7f8c8d;
 	animation-name: bounceInDown;
 	  animation-duration: 1s;
 
