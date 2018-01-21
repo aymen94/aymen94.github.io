@@ -1,15 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Archivo+Black:400);
+@import url('https://fonts.googleapis.com/css?family=Righteous');
 
-
-html, body { 
-  min-height: 100%; 
-}
 body {
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Righteous',cursive;
   margin: auto;
-  background: #92c7d6;
-  background-image: -webkit-radial-gradient(top, circle cover, #97d0e1, #427388 80%);
-  background-image: -moz-radial-gradient(top, circle cover, #97d0e1, #427388 80%);
+  background: #56CCF2;  
+  background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2); 
+  background: linear-gradient(to right, #2F80ED, #56CCF2);
 }
 
 button{
@@ -17,7 +13,6 @@ button{
 }
 
 button:hover{
-
 	transition: all 200ms;
 	transform: scale(1.2);
 }
@@ -28,30 +23,35 @@ button:hover{
 
 }
 #my-img:hover{
-		border-radius: 80px;
+	border-radius: 80px;
     transform: rotate(360deg);
 
 }
 
+.btn-wrap{
+    font-family: 'Righteous', cursive;
+    border-width: 4px;
+    box-shadow: 4px 5px 0 #212121;
+    border: 4px solid #212121;
+    text-align: center;
+    padding: 7px;
+}
+.btn-wrap:hover{
+    -webkit-transform: translate(2px,3px);
+    transform: translate(2px,3px);
+    box-shadow: 2px 2px 0 #212121;
+
+}
+
 h1{
-  animation-name: zoomIn;
+  animation-name: jump;
+  -webkit-animation-name:jump;
   animation-duration: 1s;
-	text-shadow: 0 1px 0 #ccc,
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
+  font-size: 300%;
 }
 
 video { 
-   position: fixed;
+  position: fixed;
   right: 0; 
   bottom: 0;
   min-width: 100%; 
@@ -64,12 +64,14 @@ video {
 
 
 .jumbotron{
-  background-image: -webkit-radial-gradient(top, circle cover, #cfd8dc, #37474f 80%);
-  background-image: -moz-radial-gradient(top, circle cover, #cfd8dc, #37474f 80%);
-	box-shadow: 5px 10px 5px #7f8c8d;
-	animation-name: bounceInDown;
-	  animation-duration: 1s;
+  background: #457fca;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+	box-shadow: 5px 10px 5px #7f8c8d;
+	animation-name: bounceIn;
+    -webkit-animation-name:bounceIn;
+	animation-duration: 1s;
 }
 
 .progress-bar{
@@ -77,41 +79,123 @@ video {
 }
 
 .social{
+  padding: 5px;
+  color:white;
 	background-color: #2c3e50;
 	border-radius: 5px;
+  font-size: 150%;
 }
 
 
-@keyframes bounceInDown {
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
   0% {
-    opacity: 0;
-    transform: translateY(-2000px);
-  }
-
-  60% {
-    opacity: 1;
-    transform: translateY(30px);
-  }
-
-  80% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes zoomIn {
-  from {
     opacity: 0;
     transform: scale3d(.3, .3, .3);
   }
 
-  50% {
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
     opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
   }
 }
+
+@keyframes jump {
+   from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+
+@-webkit-keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+}
+
+@-webkit-keyframes jump {
+   from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+     -webkit-transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+     -webkit-transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+     -webkit-transform: translate3d(0,-4px,0);
+  }
+}
+
 
 .me{
 	display: none;
