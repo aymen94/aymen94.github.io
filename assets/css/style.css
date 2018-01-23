@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+body {
+  font-family: 'Righteous',cursive;
+  margin: auto;
+  background: #56CCF2;  
+  background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2); 
+  background: linear-gradient(to right, #2F80ED, #56CCF2);
+}
+
+button{
+	transition: all 0.5;
+}
+
+button:hover{
+	transition: all 200ms;
+	transform: scale(1.2);
+}
+#my-img{
+	border-radius: 5px;
+	margin: auto;
+	transition: all 0.5s;
+
+}
+#my-img:hover{
+	border-radius: 80px;
+    transform: rotate(360deg);
+
+}
+
+.btn-wrap{
+    font-family: 'Righteous', cursive;
+    border-width: 4px;
+    box-shadow: 4px 5px 0 #212121;
+    border: 4px solid #212121;
+    text-align: center;
+    padding: 7px;
+}
+.btn-wrap:hover{
+    -webkit-transform: translate(2px,3px);
+    transform: translate(2px,3px);
+    box-shadow: 2px 2px 0 #212121;
+
+}
+
+h1{
+  animation-name: jump;
+  -webkit-animation-name:jump;
+  animation-duration: 0.5s;
+  font-size: 300%;
+}
+
+video { 
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+} 
+
+
+
+.jumbotron{
+  background: #457fca;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	box-shadow: 5px 10px 5px #7f8c8d;
+	animation-name: bounceIn;
+    -webkit-animation-name:bounceIn;
+	animation-duration: 0.5s;
+}
+
+.progress-bar{
+	font-size: 120%;
+}
+
+.social{
+  padding: 5px;
+  color:white;
+	background-color: #2c3e50;
+	border-radius: 5px;
+  font-size: 150%;
+}
+
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes jump {
+   from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+
+@-webkit-keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+}
+
+@-webkit-keyframes jump {
+   from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+     -webkit-transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+     -webkit-transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+     -webkit-transform: translate3d(0,-4px,0);
+  }
+}
+
+
+.me{
+	display: none;
+}
+
+/* box */
+
+.box-bottom {
+  background: #fff;
+  padding: 20px
+}
+.box-bottom h3 {
+  color: #000;
+  margin-top: 0
+}
+.box-full {
+  padding: 10px;
+}
+.box-full a:hover{
+  display: block;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out 
+}
+.box-bottom h3 {
+  text-transform: uppercase;
+  color: #666;
+  margin-top: 5px;
+  display: block
+}
+
+.box-top {
+  border:1px solid white;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: block;
+}
+.box-top img {
+  width: 100%;
+}
+/*background 
+
+body{
+	margin:0;
+	padding:0;
+	font-family:"arial",heletica,sans-serif;
+	font-size:12px;
+    background: #2980b9 url('../img/bg.png') repeat 0 0;
+	-webkit-animation: 10s linear 0s normal none infinite animate;
+	-moz-animation: 10s linear 0s normal none infinite animate;
+	-ms-animation: 10s linear 0s normal none infinite animate;
+	-o-animation: 10s linear 0s normal none infinite animate;
+	animation: 10s linear 0s normal none infinite animate;
+ 
+}
+ 
+@-webkit-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-moz-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-ms-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-o-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+*/
