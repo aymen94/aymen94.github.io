@@ -15,3 +15,15 @@ function hidden(elemnt) {
     for (var i = 0; i < hide.length; i++)
         hide[i].style.display = 'none';
 }
+
+
+particlesJS('particles-js', {
+  'particles': {
+    'number':{'value':'100','density':true},
+    'color':{'value':'#2c3e50'},
+    'shape':{'type':'circle'},
+    'size':{'value':'5'},
+    'opacity':{'random':true},
+    'interactivity': { 'onclick': false },
+}
+});
