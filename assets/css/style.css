@@ -7,27 +7,68 @@ body {
   background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2); 
   background: linear-gradient(to right, #2F80ED, #56CCF2);
 }
-
 button{
-	transition: all 0.5;
+  transition: all 0.5;
 }
-
 button:hover{
-	transition: all 200ms;
-	transform: scale(1.2);
+  transition: all 200ms;
+  transform: scale(1.2);
+}
+h1{
+  animation-name: jump;
+  -webkit-animation-name:jump;
+  animation-duration: 0.5s;
+  font-size: 300%;
+}
+i{
+  border-radius: 5px;
+  margin: auto;
+  transition: all 0.5s;
+}
+i:hover{
+  border-radius: 80px;
+  transform: rotate(360deg);
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+#particles-js{
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ left: 0;
+ margin: auto;
+ min-height: 50%;
+ min-width: 50%;
 }
 #my-img{
 	border-radius: 5px;
 	margin: auto;
 	transition: all 0.5s;
-
 }
 #my-img:hover{
 	border-radius: 80px;
-    transform: rotate(360deg);
-
+  transform: rotate(360deg);
 }
-
 .btn-wrap{
     font-family: 'Righteous', cursive;
     border-width: 4px;
@@ -43,24 +84,6 @@ button:hover{
 
 }
 
-h1{
-  animation-name: jump;
-  -webkit-animation-name:jump;
-  animation-duration: 0.5s;
-  font-size: 300%;
-}
-
-video { 
-  position: fixed;
-  right: 0; 
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-  width: auto; 
-  height: auto;
-  z-index: -100;
-} 
-
 
 
 .jumbotron{
@@ -68,9 +91,9 @@ video {
   background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-	box-shadow: 5px 10px 5px #7f8c8d;
+	box-shadow: 5px 10px 5px rgba(204, 204, 204, 0.59);
 	animation-name: bounceIn;
-    -webkit-animation-name:bounceIn;
+ -webkit-animation-name:bounceIn;
 	animation-duration: 0.5s;
 }
 
@@ -86,6 +109,9 @@ video {
   font-size: 150%;
 }
 
+.text-center {
+  text-align: center;
+}
 
 @keyframes bounceIn {
   from, 20%, 40%, 60%, 80%, to {
