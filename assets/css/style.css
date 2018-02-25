@@ -43,7 +43,7 @@ i:hover{
 }
 #my-img:hover{
 	border-radius: 80px;
-  transform: rotate(360deg);
+   transform: rotate(360deg);
 }
 .btn-wrap{
     font-family: 'Righteous', cursive;
