@@ -14,7 +14,7 @@ button:hover{
 h1{
   animation-name: jump;
   -webkit-animation-name:jump;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   font-size: 300%;
   color:white;
 }
@@ -66,7 +66,7 @@ i:hover{
   box-shadow: 5px 10px 5px rgba(183, 183, 183, 0.4);
   animation-name: bounceIn;
   -webkit-animation-name:bounceIn;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
 }
 .progress-bar{
 	font-size: 120%;
@@ -186,7 +186,7 @@ i:hover{
 .box-full a:hover{
   display: block;
   box-shadow: 5px 5px 20px rgba(183, 183, 183, 0.4);
-  transition: all 0.2s ease-in-out 
+  transition: all 1s ease-in-out 
 }
 .box-bottom h3 {
   text-transform: uppercase;
