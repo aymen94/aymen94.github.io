@@ -186,7 +186,7 @@ i:hover{
 .box-full a:hover{
   display: block;
   box-shadow: 5px 5px 20px rgba(183, 183, 183, 0.4);
-  transition: all 1s ease-in-out 
+  transition: all 0.2s ease-in-out 
 }
 .box-bottom h3 {
   text-transform: uppercase;
