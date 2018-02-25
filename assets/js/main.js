@@ -15,6 +15,7 @@ function hidden(elemnt) {
     for (var i = 0; i < hide.length; i++)
         hide[i].style.display = 'none';
 }
+
 particlesJS('particles-js', {
   'particles': {
     'number':{'value':'100','density':true},
@@ -24,3 +25,4 @@ particlesJS('particles-js', {
     'opacity':{'random':true},
     'interactivity': { 'onclick': false },
 }
+});
