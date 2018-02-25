@@ -76,6 +76,9 @@ i:hover{
   border-radius: 5px;
   font-size: 300%;
 }
+.social a i{
+    color: #212026;
+}
 .text-center {
   text-align: center;
 }
