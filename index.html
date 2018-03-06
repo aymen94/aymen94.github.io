@@ -1,218 +1,245 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Aymen Naghmouchi</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-  <meta name="description" content="personal page ">
-  <meta name="keywords" content="HTML,CSS,XML,JavaScript,java,aymen,naghmouchi,fullstack,blockchain,developer,me">
-  <meta name="author" content="Aymen Naghmouchi">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aymen Naghmouchi</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="description" content="personal page ">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript,java,aymen,naghmouchi,fullstack,blockchain,developer,me">
+	<meta name="author" content="Aymen Naghmouchi">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-  <div id="particles-js"></div>
+	<div id="particles-js"></div>
 	<div class="container text-center ">
 
-		<h1>I'm Aymen Naghmouchi</h1>
+		<h1>Aymen Naghmouchi</h1>
 		<div class="jumbotron text-center col-md-12 ">
-			<img src="assets/media/aymen.png " id="my-img"/>
+			<img src="assets/media/aymen.png " id="my-img" />
 			<tr>
 				<td>
 					<div class="text-center col-md-12 social ">
-						<a href="https://www.linkedin.com/in/aymennaghmouchi/ "  target="_blank "><i class="fab fa-linkedin fa-lg "></i></a>
-						<a href="https://www.github.com/aymen94/ "  target="_blank "><i class="fab fa-github-square fa-lg "></i></a>
-						<a href="https://stackoverflow.com/users/4671263/aymen "  target="_blank " ><i class="fab fa-stack-overflow fa-lg "></i></a>
-						<a href="https://www.facebook.com/aymen.naghmouchi "  target="_blank " ><i class="fab fa-facebook-square fa-lg "></i></a>
-						<a href="https://twitter.com/aymen1994 "  target="_blank " ><i class="fab fa-twitter-square fa-lg "></i></a>
-						<a href="mailto:aymenadvance@gmail.com " ><i class="fas fa-envelope fa-lg "></i></a>
+						<a href="https://www.linkedin.com/in/aymennaghmouchi/ " target="_blank ">
+							<i class="fab fa-linkedin fa-lg "></i>
+						</a>
+						<a href="https://www.github.com/aymen94/ " target="_blank ">
+							<i class="fab fa-github-square fa-lg "></i>
+						</a>
+						<a href="https://stackoverflow.com/users/4671263/aymen " target="_blank ">
+							<i class="fab fa-stack-overflow fa-lg "></i>
+						</a>
+						<a href="https://www.facebook.com/aymen.naghmouchi " target="_blank ">
+							<i class="fab fa-facebook-square fa-lg "></i>
+						</a>
+						<a href="https://twitter.com/aymen1994 " target="_blank ">
+							<i class="fab fa-twitter-square fa-lg "></i>
+						</a>
+						<a href="mailto:aymenadvance@gmail.com ">
+							<i class="fas fa-envelope fa-lg "></i>
+						</a>
 					</div>
 				</td>
 			</tr>
-			  <p class="text-center ">
-				  I speak JavaScript with MeteorJS accent and TypeScript grammar.</br>
-			           I'm a curious and ambitious guy, always looking for challenges.
-			  </p>
-			  <button type="button " class="btn btn-wrap " id="bio " onclick="showHide(id) ">About Me
-			  </button>
-			  <button type="button " class="btn btn-wrap " id="skill " onclick="showHide(id) " >My Skill</button>
-			  <button type="button " class="btn btn-wrap " id="project " onclick="showHide(id) " >My Projects</button>
+			<p class="text-center" id="shortDes">
+				I speak JavaScript with MeteorJS accent and TypeScript grammar. I'm a curious and ambitious guy, always looking for challenges.
+			</p>
+			<button type="button" class="btn btn-wrap" id="bio" onclick="showHide(id) ">About Me</button>
+			<button type="button" class="btn btn-wrap" id="skill" onclick="showHide(id) ">My Skill</button>
+			<button type="button" class="btn btn-wrap" id="project" onclick="showHide(id) ">My Project</button>
 		</div>
-		
-		<div class="me bio " href="#bio ">
+		<div id="setting">
+			<label for="theme">theme:</label>
+			<div id="theme">
+				<label>
+					<input type="radio" name="theme" value="dark" checked>Dark</label>
+				<label>
+					<input type="radio" name="theme" value="white">White</label>
+			</div>
+		</div>
+		<div class="me bio" href="#bio">
 			<h1>About Me </h1>
-		         <div class="jumbotron text-center col-md-12 ">
-		         <div class="col-md-12 box-full ">
-	               <p align="center ">
-					I'm a curious and ambitious guy, always looking for challenges.</br>My mission to create performant and beautiful code.</br>I am extremely passionate to learn new  skills and apply them in my projects and I love manipulate data structure.</br>I'm a programmer for passion and hobby.
-			        </p>
-				  </div>	
-		       </div>
-		 </div>
+			<div class="jumbotron text-center col-md-12 ">
+				<div class="col-md-12 box-full ">
+					<p class="text-center" id="fullDes">
+						I'm a curious and ambitious guy, always looking for challenges. My mission to create performant and beautiful code. I am
+						extremely passionate to learn new skills and apply them in my projects and I love manipulate data structure. I'm a
+						programmer for passion and hobby.
+					</p>
+				</div>
+			</div>
+		</div>
 
-	<div  class="me skill " href="#skill ">
-		<h1> My Skill</h1>
-		<div class="jumbotron text-center col-md-12 ">
+		<div class="me skill" href="#skill">
+			<h1> My Skill</h1>
+			<div class="jumbotron text-center col-md-12">
 
-			<div class="col-md-8 col-lg-9 ">
-			<button class="btn btn-default " id="all " onclick="clickMe(this.id) " >All</button>
-				<button class="btn btn-success " id="language " onclick="clickMe(this.id) ">Language</button>
-				<button class="btn btn-info " id="framework " onclick="clickMe(this.id) ">Framework</button>
-				<button class="btn btn-warning " id="library " onclick="clickMe(this.id) ">Library</button>
-				<button class="btn btn-danger " id="platform " onclick="clickMe(this.id) ">Platform</button>
-				<button class="btn btn " id="other " onclick="clickMe(this.id) ">other</button>
-			</br></br>
-	                       <div class="progress language all ">
-								<span class="pull-right ">Advanced</span>
-								<div class="progress-bar progress-bar-success progress-bar " role="progressbar " aria-valuenow="80
-    " aria-valuemin="0 " aria-valuemax="100 " style="width:75% " >JavaScript(ES6)/TypeScript</div>
-							</div>
+				<div class="col-md-8 col-lg-9">
+					<button class="btn btn-default " id="all " onclick="clickMe(this.id) ">All</button>
+					<button class="btn btn-success " id="language " onclick="clickMe(this.id) ">Language</button>
+					<button class="btn btn-info " id="framework " onclick="clickMe(this.id) ">Framework</button>
+					<button class="btn btn-warning " id="library " onclick="clickMe(this.id) ">Library</button>
+					<button class="btn btn-danger " id="platform " onclick="clickMe(this.id) ">Platform</button>
+					<button class="btn btn " id="other " onclick="clickMe(this.id) ">other</button>
+					</br>
+					</br>
+					<div class="progress language all">
+						<span class="pull-right ">Advanced</span>
+						<div class="progress-bar progress-bar-success progress-bar " role="progressbar " aria-valuenow="80
+    " aria-valuemin="0 " aria-valuemax="100 " style="width:75% ">JavaScript(ES6)/TypeScript</div>
+					</div>
 
-							<div class="progress framework all ">
-				             <span class="pull-right ">Advanced</span>
-					         <div class="progress-bar progress-bar-info progress-bar " role="progressbar " aria-valuenow="80
+					<div class="progress framework all">
+						<span class="pull-right ">Advanced</span>
+						<div class="progress-bar progress-bar-info progress-bar " role="progressbar " aria-valuenow="80
     " aria-valuemin="0 " aria-valuemax="100 " style="width:75% ">Bootstrap, Materialize, Pure</div>
-				            </div>
+					</div>
 
-							<div class="progress language all ">
-								<span class="pull-right ">Advanced</span>
-								<div class="progress-bar progress-bar-success progress-bar " role="progressbar " aria-valuenow="80
-    " aria-valuemin="0 " aria-valuemax="100 " style="width:75% " >HTML5, CSS3</div>
-							</div>
+					<div class="progress language all">
+						<span class="pull-right ">Advanced</span>
+						<div class="progress-bar progress-bar-success progress-bar " role="progressbar " aria-valuenow="80
+    " aria-valuemin="0 " aria-valuemax="100 " style="width:75% ">HTML5, CSS3</div>
+					</div>
 
-							<div class="progress language all ">
-							    <span class="pull-right ">Advanced</span>
-								<div class="progress-bar progress-bar-success progress-bar " role="progressbar " aria-valuenow="80
-    " aria-valuemin="0 " aria-valuemax="100 " style="width:70% " >C/C++,Java,Python</div>
-							</div>
+					<div class="progress language all ">
+						<span class="pull-right ">Advanced</span>
+						<div class="progress-bar progress-bar-success progress-bar " role="progressbar " aria-valuenow="80
+    " aria-valuemin="0 " aria-valuemax="100 " style="width:70% ">C/C++,Java,Python</div>
+					</div>
 
-		                     <div class="progress other all ">
-							    <span class="pull-right ">Advanced</span>
-								 <div class="progress-bar progress-bar progress-bar " role="progressbar " aria-valuenow="80 " aria-valuemin="0
-    " aria-valuemax="100 " style="width:70% " >Node.js, Express, Meteor </div>
-							</div>
+					<div class="progress other all ">
+						<span class="pull-right ">Advanced</span>
+						<div class="progress-bar progress-bar progress-bar " role="progressbar " aria-valuenow="80 " aria-valuemin="0
+    " aria-valuemax="100 " style="width:70% ">Node.js, Express, Meteor </div>
+					</div>
 
-							 <div class="progress library all ">
-							   <span class="pull-right ">Advanced</span>
-							   <div class="progress-bar progress-bar-warning progress-bar " role="progressbar "  aria-valuenow="75
+					<div class="progress library all ">
+						<span class="pull-right ">Advanced</span>
+						<div class="progress-bar progress-bar-warning progress-bar " role="progressbar " aria-valuenow="75
     " aria-valuemin="0 " aria-valuemax="100 " style="width:70% ">React</div>
-					        </div>
-					        	 <div class="progress framework all ">
-							   <span class="pull-right ">Advanced</span>
-							   <div class="progress-bar progress-bar-info progress-bar " role="progressbar "  aria-valuenow="75
+					</div>
+					<div class="progress framework all ">
+						<span class="pull-right ">Advanced</span>
+						<div class="progress-bar progress-bar-info progress-bar " role="progressbar " aria-valuenow="75
     " aria-valuemin="0 " aria-valuemax="100 " style="width:70% ">Angular</div>
-					        </div>
-						
-				           
-							<div class="progress platform all ">
-						      <span class="pull-right ">Advanced</span>
-					            <div class="progress-bar progress-bar-danger progress-bar " role="progressbar " aria-valuenow="65
+					</div>
+
+
+					<div class="progress platform all ">
+						<span class="pull-right ">Advanced</span>
+						<div class="progress-bar progress-bar-danger progress-bar " role="progressbar " aria-valuenow="65
     " aria-valuemin="0 " aria-valuemax="100 " style="width:65% ">npm</div>
-					          </div>
-							<div class="progress framework all ">
-							   <span class="pull-right ">Advanced</span>
-								 <div class="progress-bar progress-bar-info progress-bar " role="progressbar " aria-valuenow="65
+					</div>
+					<div class="progress framework all ">
+						<span class="pull-right ">Advanced</span>
+						<div class="progress-bar progress-bar-info progress-bar " role="progressbar " aria-valuenow="65
     " aria-valuemin="0 " aria-valuemax="100 " style="width:65% ">React Native</div>
-							</div>
-					        <div class="progress language all ">
-							   <span class="pull-right ">Experienced</span>
-							   <div class="progress-bar progress-bar-success progress-bar " role="progressbar " aria-valuenow="60
+					</div>
+					<div class="progress language all ">
+						<span class="pull-right ">Experienced</span>
+						<div class="progress-bar progress-bar-success progress-bar " role="progressbar " aria-valuenow="60
     " aria-valuemin="0 " aria-valuemax="100 " style="width:60% ">php</div>
-						   </div>
-						   <div class="progress language all ">
-				               <span class="pull-right ">Intermediate</span>
-					           <div class="progress-bar progress-bar-success progress-bar " role="progressbar " aria-valuenow="60
+					</div>
+					<div class="progress language all ">
+						<span class="pull-right ">Intermediate</span>
+						<div class="progress-bar progress-bar-success progress-bar " role="progressbar " aria-valuenow="60
     " aria-valuemin="0 " aria-valuemax="100 " style="width:60% ">Sql,NoSql</div>
-			            	</div>	
-							<div class="progress framework all ">
-								 <span class="pull-right ">Intermediate</span>
-								 <div class="progress-bar progress-bar-info progress-bar " role="progressbar " aria-valuenow="60
-    " aria-valuemin="0 " aria-valuemax="100 " style="width:60% " >Django</div>
-							</div>
-						
-							 <div class="progress platform all ">
-							  <span class="pull-right ">Talented</span>
-								 <div class="progress-bar progress-bar-danger progress-bar " role="progressbar " aria-valuenow="55
+					</div>
+					<div class="progress framework all ">
+						<span class="pull-right ">Intermediate</span>
+						<div class="progress-bar progress-bar-info progress-bar " role="progressbar " aria-valuenow="60
+    " aria-valuemin="0 " aria-valuemax="100 " style="width:60% ">Django</div>
+					</div>
+
+					<div class="progress platform all ">
+						<span class="pull-right ">Talented</span>
+						<div class="progress-bar progress-bar-danger progress-bar " role="progressbar " aria-valuenow="55
     " aria-valuemin="0 " aria-valuemax="100 " style="width:55% ">Git</div>
-								 </div>
-							 
-							<div class="progress platform all ">
-								  <span class="pull-right ">Beginner</span>
-								<div class="progress-bar progress-bar-danger progress-bar " role="progressbar " aria-valuenow="50
+					</div>
+
+					<div class="progress platform all ">
+						<span class="pull-right ">Beginner</span>
+						<div class="progress-bar progress-bar-danger progress-bar " role="progressbar " aria-valuenow="50
     " aria-valuemin="0 " aria-valuemax="100 " style="width:50% ">Anaconda | Continuum</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-3 ">
+					<div class="box-full ">
+						<h2>Languages: </h2>
+						<br/>
+						<h4>
+							<span class="label label-success ">Italian Native</span>
+							<br/>
+							<span class="label label-warning ">Arabic Native</span>
+							<br/>
+							<span class="label label-warning ">English Advanced</span>
+							<br/>
+						</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="me project " href="#project ">
+			<h1>My Project</h1>
+			<div class="jumbotron text-center col-md-12 ">
+				<div class="row ">
+					<div class="col-xs-12 col-md-3 col-sm-6 box-full ">
+						<a href="https://github.com/aymen94/Cryptovalue-React " target="_blank ">
+							<div id="bt3 " class="box-top ">
+								<img src="assets/media/cryptovalue.jpg ">
 							</div>
-				     </div>
-				     <div class="col-md-4 col-lg-3 ">
-				     <div class="box-full ">
-				    <h2>Languages: </h2>
-				    <br/>
-				    <h4>
-		                <span class="label label-success ">Italian Native</span><br/><br/>
-		                <span class="label label-warning ">Arabic Advanced</span><br/><br/>
-		                <span class="label label-warning ">English Advanced</span><br/><br/>
-	                </h4>
-	                </div>
-				     </div>	
+							<div class="box-bottom ">
+								<h3>Cryptovalue-React</h3>
+								Cryptovalue-React is a real-time dashboard showing the top 100 cryptocurrencies
+							</div>
+						</a>
+					</div>
+
+					<div class="col-xs-12 col-md-3 col-sm-6 box-full ">
+						<a href="https://github.com/aymen94/reactflix " target="_blank ">
+							<div id="bt3 " class="box-top ">
+								<img src="assets/media/reactflix.jpg ">
+							</div>
+							<div class="box-bottom ">
+								<h3>ReactFlix</h3>
+								Reactflix is simple front-end Inspired by Netflix.
+							</div>
+						</a>
+					</div>
+
+					<div class="col-xs-12 col-md-3 col-sm-6 box-full ">
+						<a href="https://github.com/aymen94/simple-Blockchain" target="_blank ">
+							<div id="bt3 " class="box-top ">
+								<img src="assets/media/blockchain.png">
+							</div>
+							<div class="box-bottom ">
+								<h3>simple-Blockchain</h3>
+								small tutorial with code to try to create your blockchain.
+							</div>
+						</a>
+					</div>
+
+					<div class="col-xs-12 col-md-3 col-sm-6 box-full ">
+						<a href="https://play.google.com/store/apps/details?id=com.noogle.blockdiamonds " target="_blank ">
+							<div id="bt3 " class="box-top ">
+								<img src="assets/media/blockdiamonds.png ">
+							</div>
+							<div class="box-bottom ">
+								<h3>Block Diamonds </h3>
+								Android Games
+							</div>
+						</a>
+					</div>
 				</div>
-	</div>	
-
-	       <div  class="me project " href="#project ">
-				<h1>My Projects</h1>
-				<div class="jumbotron text-center col-md-12 ">
-					 <div class="row ">
-                      <div class="col-xs-12 col-md-3 col-sm-6 box-full ">
-                       <a href="https://github.com/aymen94/Cryptovalue-React " target="_blank ">
-                       <div id="bt3 " class="box-top ">
-                       	<img src="assets/media/cryptovalue.jpg " >
-                        </div>
-                      <div class="box-bottom ">
-                    <h3>Cryptovalue-React</h3>
-                     Cryptovalue-React is a real-time dashboard showing the top 100 cryptocurrencies 
-                     </div>
-				      </a>
-              </div>
-              
-				      <div class="col-xs-12 col-md-3 col-sm-6 box-full ">
-                       <a href="https://github.com/aymen94/reactflix " target="_blank ">
-                       <div id="bt3 " class="box-top ">
-                       	<img src="assets/media/reactflix.jpg ">
-                        </div>
-                      <div class="box-bottom ">
-                    <h3>ReactFlix</h3>
-                     Reactflix is simple front-end Inspired by Netflix.
-                     </div>
-				      </a>
-				      </div>
-              
-				      <div class="col-xs-12 col-md-3 col-sm-6 box-full ">
-                <a href="https://github.com/aymen94/simple-Blockchain" target="_blank ">
-                <div id="bt3 " class="box-top ">
-                  <img src="assets/media/blockchain.png">
-                 </div>
-               <div class="box-bottom ">
-             <h3>simple-Blockchain</h3>
-             small tutorial with code to try to create your blockchain.
-              </div>
-       </a>
-       </div>
-
-				        <div class="col-xs-12 col-md-3 col-sm-6 box-full ">
-                       <a href="https://play.google.com/store/apps/details?id=com.noogle.blockdiamonds " target="_blank ">
-                       <div id="bt3 " class="box-top ">
-                       	<img src="assets/media/blockdiamonds.png ">
-                        </div>
-                      <div class="box-bottom ">
-                    <h3>Block Diamonds </h3>
-                     Android Games
-                     </div>
-				      </a>
-				      </div>
-			     </div>
-				</div>
-	        </div>
-
-	<script	src="assets/js/particles.min.js "></script>
-	<script	src="assets/js/main.js "></script>	
+			</div>
+		</div>
+		<script type="text/javascript" src="assets/js/particles.min.js "></script>
+		<script type="text/javascript" src="assets/js/main.js "></script>
 </body>
+
 </html>
