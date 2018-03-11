@@ -29,12 +29,16 @@ document.querySelector('#theme').addEventListener('change', e => {
   let jumbotron = document.querySelectorAll('.jumbotron');
   if (e.target.value == 'white') {
     document.body.style.backgroundColor = '#4286f4';
-    for (let i of jumbotron)
+    for (let i of jumbotron){
       i.style.backgroundColor = 'rgba(214,214,214,0.76)';
+      i.style.color = '#333';
+    }
   } else {
     document.body.style.backgroundColor = '#212026';
-    for (let i of jumbotron)
+    for (let i of jumbotron){
       i.style.backgroundColor = 'rgba(64, 64, 71, .92)';
+      i.style.color = '#ffffff';
+    }
   }
 });
 particlesJS('particles-js', {
