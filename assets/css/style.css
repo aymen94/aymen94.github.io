@@ -40,6 +40,7 @@ h1 {
   font-size: 3.5em;
   text-align: center;
 }
+
 .circle {
   position: relative;
   margin: 0 auto 3em;
@@ -55,6 +56,10 @@ h1 {
 
 .show{
   display: block;
+}
+
+#menu{
+  display: none;
 }
 
 .text-center{
@@ -128,7 +133,7 @@ a {
   flex-wrap: wrap;
 }
 
-ul >li{
+li{
   list-style:none;
 }
 
@@ -145,16 +150,18 @@ i:hover{
 }
 
 @media screen and (max-width: 800px) {
-  .circle {
-    margin: -2em auto 2em;
-    height: 7em;
-    width: 7em;
-    border-radius: 50%;
-    box-shadow: 0 0 0 0.6em rgba(255,255,255,0.3);
-  }
-}
 
-@media screen and (max-width: 500px) {
+  nav > ul > li {
+    display: block;
+  }
+  #menu{
+    display: block;
+    font-size: 2em;
+  }
+  nav > ul {
+    display: none;
+    background-color: rgb(6, 93, 131);
+  }
   h1 {
     font-size: 2.5em;
   }
