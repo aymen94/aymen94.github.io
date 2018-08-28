@@ -28,3 +28,16 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
         });
     });
 });
+
+window.addEventListener('load', e => {
+    if ('serviceWorker' in navigator)
+        try {
+            navigator.serviceWorker.register('sw.js', { scope: './' }).then(function (registration) {
+                console.log('Service worker registration succeeded:', registration);
+            });
+        } catch (err) {
+            console.log(err);
+        }
+    else
+        console.log('no serviceWorker');
+});
