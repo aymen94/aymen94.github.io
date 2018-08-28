@@ -157,7 +157,9 @@ i:hover{
 }
 
 @media screen and (max-width: 800px) {
-
+  .container{
+    margin: 0.5em;
+  }
   nav > ul > li {
     display: block;
   }
