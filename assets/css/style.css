@@ -2,9 +2,6 @@
 
 body {
   background: #07a;
-  background: -webkit-linear-gradient(to bottom,#07a 0%,#0aa 36%,#07a 57%,#0aa 100%);
-  background: -o-linear-gradient(to bottom,#07a 0%,#0aa 36%,#07a 57%,#0aa 100%);
-  background: -moz-linear-gradient(to bottom,#07a 0%,#0aa 36%,#07a 57%,#0aa 100%);
   background: linear-gradient(to bottom,#07a 0%,#0aa 36%,#07a 57%,#0aa 100%);
   background-size: 200%;
   background-position: 0%;
