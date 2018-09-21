@@ -1,6 +1,6 @@
 const cacheName = "aymenn.xyz";
 const assets = [
-	'./index.html',
+	'./',
 	'./assets/css/style.css',
 	'./assets/js/main.js',
 	'./assets/media/aymen.png',
