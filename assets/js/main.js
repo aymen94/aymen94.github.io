@@ -1,6 +1,8 @@
 var change = document.querySelectorAll('H2.hide');
 var menu = document.getElementById('menu');
 var ulMenu = document.querySelector('nav>ul');
+var link = document.querySelectorAll('a[href^="#"]');
+var up = document.getElementById('up');
 var i = 0;
 
 
@@ -10,7 +12,14 @@ function switchText() {
     change[++i].classList.add('show');
 }
 
-setInterval(switchText, 1500);
+
+window.addEventListener('scroll', function () {
+    if (this.pageYOffset < 80)
+        up.style.display = 'none';
+    else
+        up.style.display = 'block';
+
+})
 
 menu.addEventListener('click', function () {
     if (ulMenu.className === 'show')
@@ -19,7 +28,7 @@ menu.addEventListener('click', function () {
         ulMenu.classList.add('show');
 });
 
-document.querySelectorAll('a[href^="#"]').forEach(a => {
+link.forEach(a => {
     a.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -29,15 +38,18 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     });
 });
 
-window.addEventListener('load', e => {
+window.addEventListener('load', function () {
     if ('serviceWorker' in navigator)
         try {
             navigator.serviceWorker.register('sw.js', { scope: './' }).then(function (registration) {
-                console.log('Service worker registration succeeded:', registration);
+                console.log('Service worker registration success');
             });
         } catch (err) {
             console.log(err);
         }
     else
         console.log('no serviceWorker');
+
+    setInterval(switchText, 1500);
+
 });
