@@ -122,6 +122,10 @@ h1 {
   box-shadow: 0 18px 25px rgba(0,0,0,0.42);
 }
 
+.selected{
+  border:solid 3px #0aa;
+}
+
 p {
   background: transparent;
   font-size: 1.3em;
@@ -130,6 +134,13 @@ p {
 a {
   color: #fff;
   text-decoration: none;
+  transition: all  500ms ease-in-out;
+}
+
+
+li > a:hover{
+  text-decoration: underline overline;
+  transform: scale(1.5);
 }
 
 .list {
@@ -146,12 +157,22 @@ i{
   transition: all 0.5s;
 }
 
+i:hover{
+  transform: rotate(360deg);
+}
+
 hr {
   margin: 5em;
 }
 
-i:hover{
-  transform: rotate(360deg);
+#up{
+ position: fixed;
+ color: #fff;
+ bottom: 2%;
+ right: 2%;
+ font-size: 5em;
+ cursor: pointer;
+ z-index: 100;
 }
 
 @media screen and (max-width: 800px) {
