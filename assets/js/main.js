@@ -14,10 +14,10 @@ function switchText() {
 
 
 window.addEventListener('scroll', function () {
-    if (this.pageYOffset < 80)
-        up.style.display = 'none';
-    else
+    if (this.pageYOffset > 80)
         up.style.display = 'block';
+    else
+        up.style.display = 'none';
 
 })
 
