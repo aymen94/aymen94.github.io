@@ -167,6 +167,7 @@ hr {
 
 #up{
  position: fixed;
+ display: none;
  color: #fff;
  bottom: 2%;
  right: 2%;
