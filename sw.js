@@ -2,8 +2,8 @@ const cacheName = "aymenn.xyz";
 const assets = [
 	'./',
 	'./index.html',
-	'./assets/css/style.css',
-	'./assets/js/main.js',
+	'./assets/css/style.min.css',
+	'./assets/js/main.min.js',
 	'./assets/media/aymen.png',
 	'./favicon.ico'
 ];
