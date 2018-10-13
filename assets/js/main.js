@@ -41,7 +41,7 @@ link.forEach(a => {
 window.addEventListener('load', function () {
     if ('serviceWorker' in navigator)
         try {
-            navigator.serviceWorker.register('sw.js', { scope: './' }).then(function (registration) {
+            navigator.serviceWorker.register('sw.min.js', { scope: './' }).then(function (registration) {
                 console.log('Service worker registration success');
             });
         } catch (err) {
