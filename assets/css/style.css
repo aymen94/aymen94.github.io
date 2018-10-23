@@ -6,7 +6,6 @@ body {
   background-size: 200%;
   background-position: 0%;
   font-family: 'Open Sans', sans-serif;
-  animation: bg-move 10s linear infinite;
 }
 
 .container{
