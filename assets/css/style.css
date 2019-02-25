@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
-  background: #07a;
+  background-color: #07a;
   background: linear-gradient(to bottom,#07a 0%,#0aa 36%,#07a 57%,#0aa 100%);
   background-size: 200%;
   background-position: 0%;
