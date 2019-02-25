@@ -20,7 +20,7 @@ nav {
   left:0;
   width: 100%;
   text-align:center;
-  background-color: rgb(6, 93, 131);
+  background-color: rgb(46, 46, 46);
   height:3em;
   box-shadow: 0 18px 25px rgba(0,0,0,0.42);
   z-index: 100;
@@ -187,7 +187,7 @@ hr {
   }
   nav > ul {
     display: none;
-    background-color: rgb(6, 93, 131);
+    background-color:rgb(46, 46, 46);
   }
   h1 {
     margin: 1em;
