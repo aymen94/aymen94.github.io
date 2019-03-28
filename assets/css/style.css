@@ -135,7 +135,7 @@ a {
   transition: all  500ms ease-in-out;
 }
 
-li > a{
+nav > a{
   color: #FFF;
 }
 
