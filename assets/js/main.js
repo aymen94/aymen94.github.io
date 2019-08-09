@@ -1,13 +1,13 @@
 'use strict';
 var change = document.querySelectorAll('H2.hide');
 var ulMenu = document.querySelector('nav>ul');
-var up = document.getElementById('up');
+var footer = document.getElementById('footer');
 var i = 0;
 
 window.addEventListener('scroll', function () {
   this.pageYOffset > 80
-    ? (up.style.display = 'block')
-    : (up.style.display = 'none');
+    ? (footer.style.display = 'inline-flex')
+    : (footer.style.display = 'none');
 });
 
 document.getElementById('menu').addEventListener('click', function (e) {
@@ -17,16 +17,6 @@ document.getElementById('menu').addEventListener('click', function (e) {
 
 ulMenu.addEventListener('click', function () {
   ulMenu.classList.remove('show');
-});
-
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
 });
 
 function switchText() {
@@ -40,8 +30,8 @@ window.addEventListener('load', function () {
     try {
       navigator.serviceWorker
         .register('sw.min.js', { scope: './' })
-        .then(function (registration) {
-          console.log('Service worker registration success');
+        .then(function (reg) {
+          console.info('Service worker registration success');
         });
     } catch (err) {
       console.error(err);
