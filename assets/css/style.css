@@ -1,9 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-html {
-  scroll-behavior: smooth;
-}
 body {
+  scroll-behavior: smooth;
   background: linear-gradient(to right, #07a, #0aa, #07a);
   background-color: #08aeea;
   background-size: 200%;
