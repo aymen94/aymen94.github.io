@@ -239,11 +239,7 @@ hr {
   .circle {
     margin: 2em;
   }
-  .card {
-    margin: 10px 5px;
-    font-size: 1em;
-    height: 100%;
-  }
+
   .list {
     justify-content: flex-start;
   }
