@@ -18,8 +18,8 @@ body {
 }
 #home{
   background: #0ecde9; /* For older browsers that may not support gradients */
-  background: -webkit-radial-gradient(center, ellipse cover, #0ecde9 0%, #025e83 100%);
-  background: radial-gradient(#0ecde9, #025e83);
+  background: -webkit-radial-gradient(center, ellipse cover, #7fcbd7 0%, #003145 100%);
+  background: radial-gradient(#7fcbd7, #003145);
   min-height:100%;
   width: 100%;
 }
