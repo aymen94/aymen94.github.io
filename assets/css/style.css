@@ -17,7 +17,9 @@ body {
   color: #f5f5f5;
 }
 #home{
-  background: url("../media/bg.jpg") no-repeat center center fixed;
+  background: #0ecde9; /* For older browsers that may not support gradients */
+  background: -webkit-radial-gradient(center, ellipse cover, #0ecde9 0%, #025e83 100%);
+  background: radial-gradient(#0ecde9, #025e83);
   min-height:100%;
   width: 100%;
 }
