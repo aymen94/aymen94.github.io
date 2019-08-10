@@ -25,6 +25,16 @@ function switchText() {
   change[++i].classList.add('show');
 }
 
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
 window.addEventListener('load', function () {
   if ('serviceWorker' in navigator)
     try {
