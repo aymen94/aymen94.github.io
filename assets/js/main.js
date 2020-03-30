@@ -1,39 +1,12 @@
 'use strict';
 var change = document.querySelectorAll('H2.hide');
-var ulMenu = document.querySelector('nav>ul');
-var footer = document.getElementById('footer');
 var i = 0;
-
-window.addEventListener('scroll', function () {
-  this.pageYOffset > 80
-    ? (footer.style.display = 'inline-flex')
-    : (footer.style.display = 'none');
-});
-
-document.getElementById('menu').addEventListener('click', function (e) {
-  if (ulMenu.className === 'show') ulMenu.classList.remove('show');
-  else ulMenu.classList.add('show');
-});
-
-ulMenu.addEventListener('click', function () {
-  ulMenu.classList.remove('show');
-});
 
 function switchText() {
   change[i].classList.remove('show');
   i = i % (change.length - 1);
   change[++i].classList.add('show');
 }
-
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
 
 window.addEventListener('load', function () {
   if ('serviceWorker' in navigator)
