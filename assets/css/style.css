@@ -17,6 +17,7 @@ body {
 #home {
   background: #0ecde9; /* For older browsers that may not support gradients */
   background: linear-gradient(to right, #0aa, #07a);
+  border-radius: 15px;
 }
 
 
