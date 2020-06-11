@@ -1,7 +1,7 @@
 body {
   scroll-behavior: smooth;
-  background: linear-gradient(to right, #07a, #0aa, #07a);
   background-color: #08aeea;
+  background: linear-gradient(to right, #07a, #0aa);
   background-size: 200%;
   background-position: 0%;
   font-family: "Open Sans", sans-serif;
@@ -9,17 +9,16 @@ body {
 
 .container {
   font-size: 1.2em;
-  margin: 4em;
+  margin-left: 15em;
+  margin-right: 15em;
   color: #f5f5f5;
 }
 
 #home {
   background: #0ecde9; /* For older browsers that may not support gradients */
-  background: -webkit-radial-gradient(center, ellipse cover, #7fcbd7 0%, #003145 100%);
-  background: radial-gradient(#7fcbd7, #003145);
-  min-height: 60%;
-  width: 100%;
+  background: linear-gradient(to right, #0aa, #07a);
 }
+
 
 nav {
   position: fixed;
@@ -103,6 +102,7 @@ p {
 a {
   color: #fff;
   text-decoration: none;
+  margin: 5px;
   transition: all 500ms ease-in-out;
 }
 
