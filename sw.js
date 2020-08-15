@@ -4,7 +4,6 @@ const assets = [
 	'./index.html',
 	'./assets/css/style.min.css',
 	'./assets/js/main.min.js',
-	'./assets/media/aymen.jpg',
 	'./favicon.ico'
 ];
 self.addEventListener('activate', e => {
