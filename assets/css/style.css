@@ -8,14 +8,15 @@ body {
 
 .container {
   font-size: 1.2em;
-  display: table;
-  margin-top: auto;
-  margin-right: auto;
-  margin-left: auto;
+  margin-top: 10%;
+  margin-right: 20%;
+  margin-left: 20%;
   color: #212121;
 }
 
 #home {
+  margin: 0 auto;
+  padding: 1em;
   background: #fff; /* For older browsers that may not support gradients */
   border-radius: 15px;
 }
@@ -150,7 +151,7 @@ hr {
   }
   h1 {
     margin: 1em;
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .circle {
     margin: 2em;
