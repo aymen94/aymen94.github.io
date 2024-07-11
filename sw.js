@@ -29,14 +29,26 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('fetch', event => {
-	event.respondWith(
-		fetch(event.request).then(fetchRes => {
-			return caches.open(cacheName).then(cache => {
-				cache.put(event.request.url, fetchRes.clone());
-				return fetchRes;
-			});
-		}).catch(() => {
-			return caches.match(event.request);
-		})
-	);
-});  
+	if (event.request.url.startsWith('http') || event.request.url.startsWith('https')) {
+		event.respondWith(
+			caches.match(event.request)
+				.then(cachedResponse => {
+					if (cachedResponse) {
+						// Serve from cache  
+						return cachedResponse;
+					}
+					// Perform network request and cache the response  
+					return fetch(event.request).then(fetchRes => {
+						return caches.open(cacheName).then(cache => {
+							cache.put(event.request.url, fetchRes.clone());
+							return fetchRes;
+						});
+					}).catch(() => {
+						// Network request failed, try to serve from cache  
+						return caches.match(event.request);
+					});
+				})
+		);
+	}
+});
+
