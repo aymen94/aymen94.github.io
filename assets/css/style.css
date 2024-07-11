@@ -30,6 +30,16 @@ body {
   padding: 1rem;
 }
 
+.icon {
+  fill: #000000;
+  stroke: #000000;
+}
+
+body.dark-theme .icon {
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+}
+
 .theme-toggle {
   cursor: pointer;
   background: none;
