@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const changeTheme = (theme) => {
     document.documentElement.setAttribute('data-theme', theme);
+    document.body.classList.toggle('dark-theme', theme === 'dark');
     localStorage.setItem('theme', theme);
   };
 
