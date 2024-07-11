@@ -1,37 +1,39 @@
-'use strict';
+document.addEventListener('DOMContentLoaded', () => {
+  const themeToggle = document.getElementById('themeToggle');
+  const currentTheme = localStorage.getItem('theme') || 'light';
 
-window.addEventListener('load', function () {
-  if ('serviceWorker' in navigator)
-    try {
-      navigator.serviceWorker
-        .register('sw.min.js', { scope: './' })
-        .then(function (reg) {
-          console.info('Service worker registration success');
-        });
-    } catch (err) {
-      console.error(err);
+
+
+  const changeTheme = (theme) => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  };
+
+  if (currentTheme) {
+    changeTheme(currentTheme);
+    if (currentTheme === 'light') {
+      themeToggle.textContent = '🌒';
+    } else {
+      themeToggle.textContent = '🌔';
     }
-  else console.log('no serviceWorker');
-});
-
-window.document.getElementById('changeColorBtn').addEventListener('click', function (et) {
-  let icons = document.getElementsByClassName('icon');
-  if (document.body.style.backgroundColor == 'white') {
-    document.body.style.backgroundColor = 'black';
-    document.getElementById('home').style.backgroundColor = 'white';
-    document.getElementById('home').style.color = 'black';
-    changeColor(icons, 'black');
-  } else {
-    document.body.style.backgroundColor = 'white';
-    document.getElementById('home').style.backgroundColor = 'black';
-    document.getElementById('home').style.color = 'white';
-    changeColor(icons, 'white');
   }
-});
 
-function changeColor(elements, color) {
-  console.log(elements.length);
-  for (let i = 0, len = elements.length; i < len; i++) {
-    elements[i].style.fill = color;
-  }
-}
+  themeToggle.addEventListener('click', () => {
+    let theme = 'light';
+    if (document.documentElement.getAttribute('data-theme') === 'light') {
+      theme = 'dark';
+      themeToggle.textContent = '🌔';
+    } else {
+      themeToggle.textContent = '🌒';
+    }
+    changeTheme(theme);
+  });
+
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.min.js');
+    })
+  };
+
+});
