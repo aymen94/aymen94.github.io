@@ -48,9 +48,12 @@ body.dark-theme .icon {
   color: var(--text-color);
 }
 
+.small-text {
+  font-size: smaller;
+}
+
 .profile {
   max-width: 800px;
-  margin: 5rem auto;
   text-align: center;
 }
 
@@ -103,7 +106,51 @@ h1 {
   width: 40px;
 }
 
+.row {
+  display: flex;
+}
+
+#posts, #projects {
+  flex: 1; 
+  padding: 10px;
+}
+
+.post-links, .project-links {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.post-links h3, .project-links h3 {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.post-links ul, .project-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-links li, .project-links li {
+  margin-bottom: 0.5rem;
+}
+
+.post-links a, .project-links a {
+  color: #005488;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.post-links a:hover, .project-links a:hover {
+  color: #48a0d6;
+}
+
 @media screen and (max-width: 768px) {
+
+  .row {
+    display: contents;
+  }
+
   .profile {
     margin: 3rem auto;
   }
