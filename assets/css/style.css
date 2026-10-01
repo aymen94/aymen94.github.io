@@ -48,10 +48,6 @@ body.dark-theme .icon {
   color: var(--text-color);
 }
 
-.small-text {
-  font-size: smaller;
-}
-
 .profile {
   text-align: center;
 }
@@ -107,22 +103,32 @@ h1 {
 
 .row {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 640px;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
 }
 
-#posts, #projects {
-  flex: 1; 
-  padding: 10px;
+#articles, #opensource, #achievements, #projects {
+  width: 100%;
 }
 
 .post-links, .project-links {
-  margin-top: 2rem;
-  text-align: center;
+  text-align: left;
+  background-color: rgba(127, 127, 127, 0.06);
+  border: 1px solid rgba(127, 127, 127, 0.18);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
 }
 
 .post-links h3, .project-links h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: var(--accent-color);
   margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(127, 127, 127, 0.18);
 }
 
 .post-links ul, .project-links ul {
@@ -131,12 +137,23 @@ h1 {
 }
 
 .post-links li, .project-links li {
-  margin-bottom: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  transition: background-color 0.25s;
+}
+
+.post-links li:hover, .project-links li:hover {
+  background-color: rgba(127, 127, 127, 0.1);
+}
+
+.post-links li + li, .project-links li + li {
+  margin-top: 0.25rem;
 }
 
 .post-links a, .project-links a {
   color: #038d85;
   text-decoration: none;
+  font-weight: 600;
   transition: color 0.3s;
 }
 
@@ -144,11 +161,25 @@ h1 {
   color: #48a0d6;
 }
 
-@media screen and (max-width: 768px) {
+.meta {
+  display: block;
+  margin-bottom: 0.15rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
 
-  .row {
-    display: contents;
-  }
+.small-text {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: smaller;
+  opacity: 0.75;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 768px) {
 
   .profile {
     margin: 3rem auto;

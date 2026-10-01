@@ -1,4 +1,4 @@
-const cacheName = "aymenn.xyz-v1.1";
+const cacheName = "aymenn.xyz-v1.7";
 const assets = [
     './',
     './index.html',
