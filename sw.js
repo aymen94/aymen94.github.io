@@ -1,4 +1,4 @@
-const cacheName = "aymenn.xyz-v1.11";
+const cacheName = "aymenn.xyz-v1.13";
 const assets = [
     './',
     './index.html',
@@ -27,7 +27,28 @@ self.addEventListener('install', event => {
     })());
 });
 
+// Project data must stay fresh: network first, cache only as an offline fallback.
+const isLiveData = url =>
+    url.hostname === 'api.github.com' ||
+    (url.origin === self.location.origin && url.pathname.startsWith('/data/'));
+
 self.addEventListener('fetch', event => {
+    const url = new URL(event.request.url);
+    if (event.request.method === 'GET' && isLiveData(url)) {
+        event.respondWith((async () => {
+            const cache = await caches.open(cacheName);
+            try {
+                const fetchRes = await fetch(event.request);
+                if (fetchRes.ok) cache.put(event.request, fetchRes.clone());
+                return fetchRes;
+            } catch (e) {
+                const cachedResponse = await cache.match(event.request);
+                if (cachedResponse) return cachedResponse;
+                throw e;
+            }
+        })());
+        return;
+    }
     if (event.request.url.startsWith('http') || event.request.url.startsWith('https')) {
         event.respondWith((async () => {
             const cachedResponse = await caches.match(event.request);

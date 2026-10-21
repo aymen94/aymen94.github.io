@@ -167,12 +167,14 @@ a:hover {
   stroke-linecap: round;
 }
 
-.icon-moon,
-[data-theme="light"] .icon-sun {
+/* The icon reflects the chosen mode: system (default), light or dark */
+.theme-toggle svg {
   display: none;
 }
 
-[data-theme="light"] .icon-moon {
+[data-theme-mode="system"] .icon-system,
+[data-theme-mode="light"] .icon-sun,
+[data-theme-mode="dark"] .icon-moon {
   display: block;
 }
 
@@ -401,6 +403,40 @@ section + section {
 .grid li:hover {
   border-color: var(--muted);
   transform: translateY(-1px);
+}
+
+.project-group {
+  margin-bottom: 1.25rem;
+}
+
+.subhead {
+  margin: 0 0 0.6rem;
+  color: var(--muted);
+  font: 600 11px var(--mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.project-group[hidden],
+.subhead[hidden] {
+  display: none;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.4rem;
+  font-size: 12px;
+}
+
+.list .links a {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.list .links a:hover {
+  color: var(--accent);
 }
 
 .grid.collapsed li:nth-child(n + 5) {
