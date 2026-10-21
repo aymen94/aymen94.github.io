@@ -1,0 +1,115 @@
+{
+  "generatedAt": "2026-10-21T14:44:35.836Z",
+  "pinned": [
+    {
+      "name": "wamr3d",
+      "url": "https://github.com/aymen94/wamr3d",
+      "description": "WAMR3D: 3D engine in Rust and WebAssembly, built for WebGPU/WebGL",
+      "homepage": "https://wamr3d.org/",
+      "language": "JavaScript",
+      "stars": 3,
+      "pushedAt": "2026-10-19T23:24:56Z"
+    },
+    {
+      "name": "simple-Blockchain",
+      "url": "https://github.com/aymen94/simple-Blockchain",
+      "description": "small tutorial with code to try to create your blockchain 🔝",
+      "homepage": "https://medium.com/@aymennaghmouchi/how-to-work-blockchain-2b8631052335",
+      "language": "TypeScript",
+      "stars": 24,
+      "pushedAt": "2018-09-15T21:43:57Z"
+    },
+    {
+      "name": "springboot-openapi-mongodb",
+      "url": "https://github.com/aymen94/springboot-openapi-mongodb",
+      "description": "Example project with Java, Maven, Spring Boot, JUnit, Docker and OpenAPI 3.0 specification",
+      "homepage": "",
+      "language": "Java",
+      "stars": 4,
+      "pushedAt": "2024-08-26T16:38:44Z"
+    },
+    {
+      "name": "mongodb-alpine",
+      "url": "https://github.com/aymen94/mongodb-alpine",
+      "description": "Docker Image of MongoDB Alpine with configuration ",
+      "homepage": "https://hub.docker.com/r/aymen94/mongodb-alpine/",
+      "language": "Shell",
+      "stars": 1,
+      "pushedAt": "2020-03-30T00:03:42Z"
+    },
+    {
+      "name": "3d-solar-system",
+      "url": "https://github.com/aymen94/3d-solar-system",
+      "description": "Interactive 3D model of the Solar System with WebVR support",
+      "homepage": "http://aymen.xyz/3d-solar-system/",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushedAt": "2024-10-24T00:03:17Z"
+    },
+    {
+      "name": "java-sepa-xml",
+      "url": "https://github.com/aymen94/java-sepa-xml",
+      "description": "This Java library proviedes SEPA XML files to automate direct debit and credit transfer payment processes.",
+      "homepage": "",
+      "language": "",
+      "stars": 2,
+      "pushedAt": "2019-11-26T19:54:34Z"
+    }
+  ],
+  "recent": [
+    {
+      "name": "openapi-to-webmcp",
+      "url": "https://github.com/aymen94/openapi-to-webmcp",
+      "description": "Generate browser side WebMCP tools from OpenAPI 3.x (JSON/YAML), outputs JavaScript ES modules via CLI.",
+      "homepage": "",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushedAt": "2026-10-12T20:08:31Z"
+    },
+    {
+      "name": "snekweb",
+      "url": "https://github.com/aymen94/snekweb",
+      "description": "Snekweb is a small, JavaScript-first HTTP framework for Node.js ",
+      "homepage": "https://aymen94.github.io/snekweb/",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushedAt": "2026-10-12T14:50:43Z"
+    },
+    {
+      "name": "node-ipconfig",
+      "url": "https://github.com/aymen94/node-ipconfig",
+      "description": "A safe JavaScript API for Windows ipconfig output",
+      "homepage": "",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushedAt": "2026-10-11T22:07:21Z"
+    },
+    {
+      "name": "WebRAGStudio",
+      "url": "https://github.com/aymen94/WebRAGStudio",
+      "description": "A self-hostable RAG app for indexing documents locally and chatting with your data using OpenAI, Ollama, or compatible LLMs with chat",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 0,
+      "pushedAt": "2026-10-08T19:10:39Z"
+    },
+    {
+      "name": "devblog",
+      "url": "https://github.com/aymen94/devblog",
+      "description": "",
+      "homepage": "",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushedAt": "2026-10-01T17:58:32Z"
+    },
+    {
+      "name": "magicwebtools",
+      "url": "https://github.com/aymen94/magicwebtools",
+      "description": "",
+      "homepage": "https://a4bcd9d7.magicwebtools.pages.dev",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushedAt": "2026-10-01T15:04:31Z"
+    }
+  ]
+}

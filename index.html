@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aymen Naghmouchi - Principal Software Engineer</title>
+  <title>Aymen Naghmouchi - Software Engineer</title>
   <meta name="description"
-    content="Aymen Naghmouchi, Principal Software Engineer and Node.js website maintainer. open source contributor to Node.js and Jakarta EE, and a Google Summer of Code alumnus." />
+    content="Aymen Naghmouchi, Software Engineer and Node.js website maintainer. open source contributor to Node.js and Jakarta EE, and a Google Summer of Code alumnus." />
   <meta name="author" content="Aymen Naghmouchi" />
   <link rel="canonical" href="https://aymen.xyz/" />
   <meta name="color-scheme" content="dark light" />
@@ -16,7 +16,7 @@
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="profile" />
   <meta property="og:site_name" content="Aymen Naghmouchi" />
-  <meta property="og:title" content="Aymen Naghmouchi - Principal Software Engineer" />
+  <meta property="og:title" content="Aymen Naghmouchi - Software Engineer" />
   <meta property="og:description" content="Node.js website maintainer and open source contributor." />
   <meta property="og:url" content="https://aymen.xyz/" />
   <meta property="og:image" content="https://aymen.xyz/assets/media/aymen.jpg" />
@@ -33,7 +33,7 @@
       "name": "Aymen Naghmouchi",
       "url": "https://aymen.xyz/",
       "image": "https://aymen.xyz/assets/media/aymen.jpg",
-      "jobTitle": "Principal Software Engineer",
+      "jobTitle": "Software Engineer",
       "sameAs": [
         "https://github.com/aymen94",
         "https://www.linkedin.com/in/aymennaghmouchi/",
@@ -43,14 +43,20 @@
     }
   </script>
 
-  <!-- Apply the saved (or system) theme before first paint to avoid a flash -->
+  <!-- Apply the theme before first paint to avoid a flash.
+       Default is "system" (follows the OS); "light" and "dark" are explicit choices. -->
   <script>
     (function () {
+      var mode = "system";
       try {
-        var t = localStorage.getItem("theme") ||
-          (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
-        document.documentElement.setAttribute("data-theme", t);
+        var saved = localStorage.getItem("theme");
+        if (saved === "light" || saved === "dark") mode = saved;
       } catch (e) { }
+      var theme = mode === "system"
+        ? (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark")
+        : mode;
+      document.documentElement.setAttribute("data-theme", theme);
+      document.documentElement.setAttribute("data-theme-mode", mode);
     })();
   </script>
 
@@ -69,19 +75,25 @@
     <div class="header-inner">
       <a class="brand" href="/" aria-label="aymen.xyz home">/aymen.xyz</a>
       <nav class="nav" aria-label="Sections">
+        <a href="#experience">experience</a>
         <a href="#opensource">open source</a>
         <a href="#projects">projects</a>
         <a href="#articles">articles</a>
         <a href="#achievements">talks</a>
       </nav>
-      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to light theme">
-        <!-- Sun: shown in dark mode -->
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Theme: system. Switch to light">
+        <!-- Monitor: shown when following the system theme -->
+        <svg class="icon-system" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="3" y="4" width="18" height="12" rx="2" />
+          <path d="M8 20h8M12 16v4" />
+        </svg>
+        <!-- Sun: shown for the light theme -->
         <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <circle cx="12" cy="12" r="4" />
           <path
             d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
         </svg>
-        <!-- Moon: shown in light mode -->
+        <!-- Moon: shown for the dark theme -->
         <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
         </svg>
@@ -96,14 +108,15 @@
         alt="Aymen Naghmouchi's GitHub avatar" />
       <div class="hero-text">
         <h1 id="name">Aymen Naghmouchi</h1>
-        <p class="title">Principal Software Engineer</p>
+        <p class="title">Software Engineer</p>
         <p class="description">
-          Full stack developer and open source contributor building software across web, mobile, desktop, and cloud,
-          with a focus on workflow automation. I maintain the Node.js website and have contributed to Jakarta EE.
+          Full stack engineer working mostly with Node.js, TypeScript and Java. At Acer I build integrations
+          between Salesforce, NetSuite and internal systems. Outside work, I maintain the Node.js website,
+          with 600+ pull requests reviewed, and have contributed to Jakarta EE.
         </p>
         <p class="description">
-          I've worked across startups, consulting, banking and remote teams.
-          Currently based in Ticino, Switzerland, working at Acer.
+          Since co-founding a startup in 2016, I've worked in consulting, banking and enterprise systems.
+          I'm based in Ticino, Switzerland.
         </p>
       </div>
     </section>
@@ -133,6 +146,40 @@
         <span>Stack Overflow</span>
       </a>
     </div>
+
+    <!-- Experience Section: compact; the full history lives on LinkedIn -->
+    <section id="experience" class="card" aria-labelledby="experience-title">
+      <h2 id="experience-title" class="card-title">Experience</h2>
+      <ul class="list">
+        <li>
+          <span class="meta">2024 – Present · Ticino, CH</span>
+          <strong>Full Stack Engineer</strong> · Acer
+        </li>
+        <li>
+          <span class="meta">2022 – 2024 · Ticino, CH</span>
+          <strong>Integration Developer</strong> · Acer
+        </li>
+        <li>
+          <span class="meta">2021 – 2022 · Ticino, CH</span>
+          <strong>Full Stack Developer</strong> · Cryms
+        </li>
+        <li>
+          <span class="meta">2020 – 2021 · Milan, IT</span>
+          <strong>Software Engineer</strong> · UniCredit
+        </li>
+        <li>
+          <span class="meta">2019 – 2020 · Naples, IT</span>
+          <strong>Software Development Engineer</strong> · NTT DATA Italia
+        </li>
+        <li>
+          <span class="meta">2016 – 2018 · Salerno, IT</span>
+          <strong>Co-founder &amp; Software Developer</strong> · MagixUP
+        </li>
+      </ul>
+      <div class="more">
+        <a class="pill" href="https://www.linkedin.com/in/aymennaghmouchi/" target="_blank" rel="noopener">Full history on LinkedIn ↗</a>
+      </div>
+    </section>
 
     <!-- Open Source Section -->
     <section id="opensource" class="card" aria-labelledby="opensource-title">
@@ -170,6 +217,16 @@
     <!-- Projects Section -->
     <section id="projects" class="card" aria-labelledby="projects-title">
       <h2 id="projects-title" class="card-title">Projects</h2>
+      <!-- Filled by main.js from data/projects.json and the public GitHub API -->
+      <div id="pinnedGroup" class="project-group" hidden>
+        <h3 class="subhead">Pinned on GitHub</h3>
+        <ul id="pinnedList" class="list grid"></ul>
+      </div>
+      <div id="recentGroup" class="project-group" hidden>
+        <h3 class="subhead">Recently updated</h3>
+        <ul id="recentList" class="list grid"></ul>
+      </div>
+      <h3 id="moreProjectsTitle" class="subhead" hidden>More projects</h3>
       <ul id="projectList" class="list grid">
         <li>
           <span class="meta">JavaScript · npm</span>

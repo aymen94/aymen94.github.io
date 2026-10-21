@@ -64,6 +64,15 @@ if (modelContext) {
         experienceYears: "7+"
       },
 
+      experience: [
+        { role: "Full Stack Engineer", company: "Acer", period: "2024 - Present", location: "Ticino, Switzerland" },
+        { role: "Integration Developer", company: "Acer", period: "2022 - 2024", location: "Ticino, Switzerland" },
+        { role: "Full Stack Developer", company: "Cryms", period: "2021 - 2022", location: "Ticino, Switzerland" },
+        { role: "Software Engineer", company: "UniCredit", period: "2020 - 2021", location: "Milan, Italy" },
+        { role: "Software Development Engineer", company: "NTT DATA Italia", period: "2019 - 2020", location: "Naples, Italy" },
+        { role: "Co-founder and Software Developer", company: "MagixUP", period: "2016 - 2018", location: "Salerno, Italy" }
+      ],
+
       skills: {
         languages: [
           "JavaScript",
