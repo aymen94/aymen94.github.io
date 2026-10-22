@@ -1,13 +1,18 @@
 :root {
-  --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+
+  --mono:
+    ui-monospace, "Cascadia Code", "SFMono-Regular", Consolas,
+    "Liberation Mono", Menlo, monospace;
 
   --bg: #0d1117;
   --surface: #161b22;
   --border: #30363d;
   --text: #e6edf3;
   --muted: #8b949e;
-  --accent: #58a6ff;
+  --accent: #27c721;
   --white: #ffffff;
 
   --max-width: 760px;
@@ -67,7 +72,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--accent);
 }
 
 :focus-visible {
@@ -91,7 +96,6 @@ a:hover {
   top: 0;
   z-index: 10;
   background: color-mix(in srgb, var(--bg) 92%, transparent);
-  border-bottom: 1px solid var(--border);
   backdrop-filter: blur(10px);
 }
 
@@ -130,7 +134,7 @@ a:hover {
 }
 
 .nav a:hover {
-  color: var(--text);
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -151,11 +155,6 @@ a:hover {
   transition:
     border-color 0.15s,
     background 0.15s;
-}
-
-.theme-toggle:hover {
-  background: var(--surface);
-  border-color: var(--muted);
 }
 
 .theme-toggle svg {
@@ -246,10 +245,6 @@ h1 {
   letter-spacing: -0.035em;
 }
 
-.title {
-  color: var(--accent);
-}
-
 .description {
   max-width: 55ch;
   margin: 0.75rem 0 0;
@@ -280,7 +275,6 @@ h1 {
   gap: 0.45rem;
   min-height: 30px;
   padding: 0.25rem 0.7rem;
-  border: 1px solid var(--border);
   border-radius: 999px;
   transition:
     color 0.15s,
@@ -299,9 +293,6 @@ h1 {
 
 .social-links a:hover,
 .pill:hover {
-  color: var(--accent);
-  border-color: var(--accent);
-  background: var(--surface);
   text-decoration: none;
 }
 
@@ -329,12 +320,9 @@ section + section {
   margin: 0 0 0.75rem;
   font-size: 13px;
   font-weight: 600;
+  color: var(--accent);
 }
 
-.card-title::before {
-  content: "> ";
-  color: var(--white);
-}
 
 /* ---------- Lists ---------- */
 

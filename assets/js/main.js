@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
     themeToggle.setAttribute("aria-label", `Theme: ${mode}. Switch to ${nextMode(mode)}`);
     themeToggle.title = `Theme: ${mode}`;
 
-    // Browser UI color: follow the OS in system mode, otherwise match the chosen theme.
     document.querySelectorAll('meta[name="theme-color"]').forEach((meta) => {
       const scheme = (meta.media || "").includes("light") ? "light" : "dark";
       meta.content = THEME_COLORS[mode === "system" ? scheme : theme];
@@ -32,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (mode === "system") localStorage.removeItem("theme");
         else localStorage.setItem("theme", mode);
       } catch (e) {
-        // Storage may be unavailable (private mode); theme still applies for this visit.
       }
     }
   };
