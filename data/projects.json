@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T10:14:05.612Z",
+  "generatedAt": "2026-10-23T10:07:01.922Z",
   "pinned": [
     {
       "name": "wamr3d",
@@ -7,8 +7,8 @@
       "description": "WAMR3D: 3D engine in Rust and WebAssembly, built for WebGPU/WebGL",
       "homepage": "https://wamr3d.org/",
       "language": "JavaScript",
-      "stars": 3,
-      "pushedAt": "2026-10-22T09:36:36Z"
+      "stars": 4,
+      "pushedAt": "2026-10-23T00:47:41Z"
     },
     {
       "name": "simple-Blockchain",
@@ -58,6 +58,15 @@
   ],
   "recent": [
     {
+      "name": "skyhunter",
+      "url": "https://github.com/aymen94/skyhunter",
+      "description": "3D drone simulator with WAMR3D",
+      "homepage": "http://aymen.xyz/skyhunter/",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushedAt": "2026-10-22T19:15:25Z"
+    },
+    {
       "name": "openapi-to-webmcp",
       "url": "https://github.com/aymen94/openapi-to-webmcp",
       "description": "Generate browser side WebMCP tools from OpenAPI 3.x (JSON/YAML), outputs JavaScript ES modules via CLI.",
@@ -101,15 +110,6 @@
       "language": "JavaScript",
       "stars": 0,
       "pushedAt": "2026-10-01T17:58:32Z"
-    },
-    {
-      "name": "magicwebtools",
-      "url": "https://github.com/aymen94/magicwebtools",
-      "description": "",
-      "homepage": "https://a4bcd9d7.magicwebtools.pages.dev",
-      "language": "JavaScript",
-      "stars": 0,
-      "pushedAt": "2026-10-01T15:04:31Z"
     }
   ]
 }
