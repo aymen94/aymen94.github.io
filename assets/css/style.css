@@ -349,12 +349,6 @@ section + section {
   color: var(--accent);
 }
 
-.list a::after {
-  content: " ↗";
-  color: var(--muted);
-  font-weight: 400;
-}
-
 .meta {
   display: block;
   margin-top: 2px;
