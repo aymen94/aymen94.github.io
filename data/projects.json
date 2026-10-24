@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T16:23:20.606Z",
+  "generatedAt": "2026-10-24T09:34:06.500Z",
   "pinned": [
     {
       "name": "wamr3d",
@@ -51,12 +51,21 @@
       "url": "https://github.com/aymen94/java-sepa-xml",
       "description": "This Java library proviedes SEPA XML files to automate direct debit and credit transfer payment processes.",
       "homepage": "",
-      "language": "",
+      "language": "Java",
       "stars": 2,
       "pushedAt": "2019-11-26T19:54:34Z"
     }
   ],
   "recent": [
+    {
+      "name": "cellverse",
+      "url": "https://github.com/aymen94/cellverse",
+      "description": "Interactive 3D explorer of a eukaryotic animal cell, the chemical elements of life and biological macromolecules, with a rule-based molecular assembly lab, rendered with WAMR3D.",
+      "homepage": "http://aymen.xyz/cellverse/",
+      "language": "TypeScript",
+      "stars": 0,
+      "pushedAt": "2026-10-23T16:34:39Z"
+    },
     {
       "name": "skyhunter",
       "url": "https://github.com/aymen94/skyhunter",
@@ -65,15 +74,6 @@
       "language": "JavaScript",
       "stars": 0,
       "pushedAt": "2026-10-23T16:11:31Z"
-    },
-    {
-      "name": "cellverse",
-      "url": "https://github.com/aymen94/cellverse",
-      "description": "",
-      "homepage": "http://aymen.xyz/cellverse/",
-      "language": "TypeScript",
-      "stars": 0,
-      "pushedAt": "2026-10-23T15:56:42Z"
     },
     {
       "name": "openapi-to-webmcp",
