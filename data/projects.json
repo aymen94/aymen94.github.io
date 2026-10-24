@@ -51,7 +51,7 @@
       "url": "https://github.com/aymen94/java-sepa-xml",
       "description": "This Java library proviedes SEPA XML files to automate direct debit and credit transfer payment processes.",
       "homepage": "",
-      "language": "",
+      "language": "Java",
       "stars": 2,
       "pushedAt": "2019-11-26T19:54:34Z"
     }
