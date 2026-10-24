@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T16:23:20.606Z",
+  "generatedAt": "2026-10-24T21:55:41.170Z",
   "pinned": [
     {
       "name": "wamr3d",
@@ -8,7 +8,7 @@
       "homepage": "https://wamr3d.org/",
       "language": "JavaScript",
       "stars": 4,
-      "pushedAt": "2026-10-23T16:12:03Z"
+      "pushedAt": "2026-10-24T21:18:39Z"
     },
     {
       "name": "simple-Blockchain",
@@ -58,6 +58,24 @@
   ],
   "recent": [
     {
+      "name": "pocketgames",
+      "url": "https://github.com/aymen94/pocketgames",
+      "description": "Free browser games, play instantly, no downloads. Rendered with WAMR3D.",
+      "homepage": "http://aymen.xyz/pocketgames/",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushedAt": "2026-10-24T21:32:05Z"
+    },
+    {
+      "name": "cellverse",
+      "url": "https://github.com/aymen94/cellverse",
+      "description": "Interactive 3D explorer of a eukaryotic animal cell, the chemical elements of life and biological macromolecules, with a rule-based molecular assembly lab, rendered with WAMR3D.",
+      "homepage": "http://aymen.xyz/cellverse/",
+      "language": "TypeScript",
+      "stars": 0,
+      "pushedAt": "2026-10-23T16:34:39Z"
+    },
+    {
       "name": "skyhunter",
       "url": "https://github.com/aymen94/skyhunter",
       "description": "3D drone simulator with WAMR3D",
@@ -65,15 +83,6 @@
       "language": "JavaScript",
       "stars": 0,
       "pushedAt": "2026-10-23T16:11:31Z"
-    },
-    {
-      "name": "cellverse",
-      "url": "https://github.com/aymen94/cellverse",
-      "description": "",
-      "homepage": "http://aymen.xyz/cellverse/",
-      "language": "TypeScript",
-      "stars": 0,
-      "pushedAt": "2026-10-23T15:56:42Z"
     },
     {
       "name": "openapi-to-webmcp",
@@ -101,15 +110,6 @@
       "language": "JavaScript",
       "stars": 0,
       "pushedAt": "2026-10-11T22:07:21Z"
-    },
-    {
-      "name": "WebRAGStudio",
-      "url": "https://github.com/aymen94/WebRAGStudio",
-      "description": "A self-hostable RAG app for indexing documents locally and chatting with your data using OpenAI, Ollama, or compatible LLMs with chat",
-      "homepage": "",
-      "language": "TypeScript",
-      "stars": 0,
-      "pushedAt": "2026-10-08T19:10:39Z"
     }
   ]
 }
