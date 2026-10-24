@@ -174,7 +174,7 @@ if (modelContext) {
         {
           project: "nodejs.dev",
           role: "Former team member",
-          period: "2019–2022",
+          period: "2019-2022",
           description:
             "Contributed to the Node.js website redesign, documentation " +
             "and internationalization.",
@@ -184,7 +184,7 @@ if (modelContext) {
         {
           project: "Jakarta EE",
           role: "Contributor",
-          period: "2021–2022",
+          period: "2021-2022",
           description:
             "Contributed to Jakarta EE 10 and Jakarta Concurrency.",
           url: "https://jakarta.ee/"
@@ -367,7 +367,7 @@ if (modelContext) {
 
         {
           event: "FOSDEM",
-          period: "2020–Present",
+          period: "2020-Present",
           description:
             "Regular attendee of the open source conference."
         }
