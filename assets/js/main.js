@@ -48,14 +48,19 @@ document.addEventListener("DOMContentLoaded", () => {
     if (getMode() === "system") applyMode("system", false);
   });
 
-  document
-    .getElementById("emailLink")
-    .addEventListener("click", function (event) {
+  document.getElementById("emailLink")
+    .addEventListener("click", async (event) => {
       event.preventDefault();
 
-      const user = ["aymen", "advance"].join("");
-      const domain = ["gmail", "com"].join(".");
-      window.location.href = "mailto:" + user + "@" + domain;
+      const email = ["aymenadvance", "gmail.com"].join("@");
+      const label = document.getElementById("emailLabel");
+
+      try {
+        await navigator.clipboard.writeText(email);
+        label.textContent = "Email copied!";
+      } catch {
+        window.prompt("Copy this email address:", email);
+      }
     });
 
   // Projects: pinned and recently updated repositories come from GitHub automatically.
