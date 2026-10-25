@@ -15,10 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextMode = (mode) => MODES[(MODES.indexOf(mode) + 1) % MODES.length];
 
   const applyMode = (mode, persist) => {
-    const theme = mode === "system" ? (systemLight.matches ? "light" : "dark") : mode;
+    const theme =
+      mode === "system" ? (systemLight.matches ? "light" : "dark") : mode;
     root.setAttribute("data-theme", theme);
     root.setAttribute("data-theme-mode", mode);
-    themeToggle.setAttribute("aria-label", `Theme: ${mode}. Switch to ${nextMode(mode)}`);
+    themeToggle.setAttribute(
+      "aria-label",
+      `Theme: ${mode}. Switch to ${nextMode(mode)}`,
+    );
     themeToggle.title = `Theme: ${mode}`;
 
     document.querySelectorAll('meta[name="theme-color"]').forEach((meta) => {
@@ -30,8 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       try {
         if (mode === "system") localStorage.removeItem("theme");
         else localStorage.setItem("theme", mode);
-      } catch (e) {
-      }
+      } catch (e) {}
     }
   };
 
@@ -44,6 +47,16 @@ document.addEventListener("DOMContentLoaded", () => {
   systemLight.addEventListener("change", () => {
     if (getMode() === "system") applyMode("system", false);
   });
+
+  document
+    .getElementById("emailLink")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+
+      const user = ["aymen", "advance"].join("");
+      const domain = ["gmail", "com"].join(".");
+      window.location.href = "mailto:" + user + "@" + domain;
+    });
 
   // Projects: pinned and recently updated repositories come from GitHub automatically.
   // data/projects.json is refreshed daily by a workflow (pinned items need the GraphQL API);
@@ -71,7 +84,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const setCollapsed = (collapsed) => {
       projectList.classList.toggle("collapsed", collapsed);
       projectsToggle.setAttribute("aria-expanded", String(!collapsed));
-      projectsToggle.textContent = collapsed ? `Show all ${total} projects` : "Show less";
+      projectsToggle.textContent = collapsed
+        ? `Show all ${total} projects`
+        : "Show less";
     };
     setCollapsed(projectList.classList.contains("collapsed") || !collapseReady);
     projectsToggle.hidden = false;
@@ -131,7 +146,8 @@ document.addEventListener("DOMContentLoaded", () => {
     meta.className = "meta";
     const parts = [repo.language || "Repository"];
     if (repo.stars > 0) parts.push(`★ ${repo.stars}`);
-    if (showUpdated && repo.pushedAt) parts.push(`updated ${relativeTime(repo.pushedAt)}`);
+    if (showUpdated && repo.pushedAt)
+      parts.push(`updated ${relativeTime(repo.pushedAt)}`);
     meta.textContent = parts.join(" · ");
     li.append(meta, link(repo.url, repo.name));
 
@@ -164,13 +180,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const curated = projectList ? [...projectList.children] : [];
   const dedupeCurated = (repos) => {
     if (!projectList) return;
-    const shown = new Set(repos.flatMap((r) => [normalizeUrl(r.url), normalizeUrl(r.homepage)]));
+    const shown = new Set(
+      repos.flatMap((r) => [normalizeUrl(r.url), normalizeUrl(r.homepage)]),
+    );
     shown.delete("");
     projectList.replaceChildren(
       ...curated.filter((li) => {
         const a = li.querySelector("a");
         return !(a && shown.has(normalizeUrl(a.href)));
-      })
+      }),
     );
   };
 
@@ -181,14 +199,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const moreTitle = document.getElementById("moreProjectsTitle");
     if (moreTitle && projectList) {
-      moreTitle.hidden = !(pinned.length || recent.length) || projectList.children.length === 0;
+      moreTitle.hidden =
+        !(pinned.length || recent.length) || projectList.children.length === 0;
     }
     setupCollapse();
   };
 
   const pickRecent = (repos, pinned) => {
     const pinnedNames = new Set(pinned.map((r) => r.name));
-    return repos.filter((r) => !EXCLUDE.has(r.name) && !pinnedNames.has(r.name)).slice(0, RECENT_COUNT);
+    return repos
+      .filter((r) => !EXCLUDE.has(r.name) && !pinnedNames.has(r.name))
+      .slice(0, RECENT_COUNT);
   };
 
   const readLiveCache = () => {
@@ -207,12 +228,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const res = await fetch(
       `https://api.github.com/users/${GITHUB_USER}/repos?type=owner&sort=pushed&per_page=20`,
-      { headers: { Accept: "application/vnd.github+json" } }
+      { headers: { Accept: "application/vnd.github+json" } },
     );
     if (!res.ok) throw new Error(`GitHub API ${res.status}`);
-    const repos = (await res.json()).filter((r) => !r.fork && !r.archived).map(fromRest);
+    const repos = (await res.json())
+      .filter((r) => !r.fork && !r.archived)
+      .map(fromRest);
     try {
-      sessionStorage.setItem(LIVE_CACHE_KEY, JSON.stringify({ at: Date.now(), repos }));
+      sessionStorage.setItem(
+        LIVE_CACHE_KEY,
+        JSON.stringify({ at: Date.now(), repos }),
+      );
     } catch (e) {
       // Caching is optional.
     }
