@@ -207,6 +207,10 @@ a:hover {
   gap: 1.5rem;
 }
 
+.hero picture {
+  display: contents;
+}
+
 .avatar {
   flex: 0 0 auto;
   width: 112px;
@@ -499,4 +503,4 @@ section + section {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
-}
+}
