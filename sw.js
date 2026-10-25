@@ -1,10 +1,11 @@
-const cacheName = "aymenn.xyz-v1.14";
+const cacheName = "aymenn.xyz-v1.15";
 const assets = [
     './',
     './index.html',
     './assets/css/style.min.css',
     './assets/js/main.min.js',
     './assets/js/webmcp.min.js',
+    './assets/media/aymen.jpg',
     './favicon.ico'
 ];
 
@@ -69,9 +70,10 @@ self.addEventListener('fetch', event => {
             // Serve from cache
             return cachedResponse;
         }
-        // Perform network request and cache the response
+        // Perform network request and cache the response. Opaque (no-cors) responses
+        // are skipped: Chrome pads each one by several MB in storage quota.
         const fetchRes = await fetch(event.request);
-        if (fetchRes.ok || fetchRes.type === 'opaque') {
+        if (fetchRes.ok) {
             const cache = await caches.open(cacheName);
             cache.put(event.request, fetchRes.clone());
         }
