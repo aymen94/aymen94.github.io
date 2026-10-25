@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T21:55:41.170Z",
+  "generatedAt": "2026-10-25T14:39:17.919Z",
   "pinned": [
     {
       "name": "wamr3d",
@@ -51,12 +51,21 @@
       "url": "https://github.com/aymen94/java-sepa-xml",
       "description": "This Java library proviedes SEPA XML files to automate direct debit and credit transfer payment processes.",
       "homepage": "",
-      "language": "Java",
+      "language": "",
       "stars": 2,
       "pushedAt": "2019-11-26T19:54:34Z"
     }
   ],
   "recent": [
+    {
+      "name": "NeuronDump",
+      "url": "https://github.com/aymen94/NeuronDump",
+      "description": "NeuronDump reads GGUF model files (the format used by Ollama and llama.cpp) and shows what is inside: layers, attention heads, vocabulary, chat template, weight statistics. It can then remove unused parts and write a smaller GGUF that still runs in Ollama and llama.cpp.",
+      "homepage": "http://aymen.xyz/NeuronDump/",
+      "language": "Rust",
+      "stars": 0,
+      "pushedAt": "2026-10-25T14:37:23Z"
+    },
     {
       "name": "pocketgames",
       "url": "https://github.com/aymen94/pocketgames",
@@ -101,15 +110,6 @@
       "language": "JavaScript",
       "stars": 0,
       "pushedAt": "2026-10-12T14:50:43Z"
-    },
-    {
-      "name": "node-ipconfig",
-      "url": "https://github.com/aymen94/node-ipconfig",
-      "description": "A safe JavaScript API for Windows ipconfig output",
-      "homepage": "",
-      "language": "JavaScript",
-      "stars": 0,
-      "pushedAt": "2026-10-11T22:07:21Z"
     }
   ]
 }
