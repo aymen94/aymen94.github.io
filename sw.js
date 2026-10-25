@@ -1,9 +1,10 @@
-const cacheName = "aymenn.xyz-v1.13";
+const cacheName = "aymenn.xyz-v1.14";
 const assets = [
     './',
     './index.html',
     './assets/css/style.min.css',
     './assets/js/main.min.js',
+    './assets/js/webmcp.min.js',
     './favicon.ico'
 ];
 
@@ -27,14 +28,25 @@ self.addEventListener('install', event => {
     })());
 });
 
+// Other GitHub Pages projects live under this origin (e.g. /NeuronDump/, /skyhunter/).
+// Only the root site is handled here; anything else goes straight to the network.
+const isRootSite = url =>
+    url.origin === self.location.origin &&
+    (url.pathname === '/' ||
+        url.pathname === '/index.html' ||
+        url.pathname === '/favicon.ico' ||
+        url.pathname === '/manifest.json' ||
+        url.pathname.startsWith('/assets/'));
+
 // Project data must stay fresh: network first, cache only as an offline fallback.
 const isLiveData = url =>
     url.hostname === 'api.github.com' ||
     (url.origin === self.location.origin && url.pathname.startsWith('/data/'));
 
 self.addEventListener('fetch', event => {
+    if (event.request.method !== 'GET') return;
     const url = new URL(event.request.url);
-    if (event.request.method === 'GET' && isLiveData(url)) {
+    if (isLiveData(url)) {
         event.respondWith((async () => {
             const cache = await caches.open(cacheName);
             try {
@@ -49,18 +61,20 @@ self.addEventListener('fetch', event => {
         })());
         return;
     }
-    if (event.request.url.startsWith('http') || event.request.url.startsWith('https')) {
-        event.respondWith((async () => {
-            const cachedResponse = await caches.match(event.request);
-            if (cachedResponse) {
-                // Serve from cache
-                return cachedResponse;
-            }
-            // Perform network request and cache the response
-            const fetchRes = await fetch(event.request);
+    // Same-origin paths outside the root site (other projects) are not touched.
+    if (url.origin === self.location.origin ? !isRootSite(url) : !url.protocol.startsWith('http')) return;
+    event.respondWith((async () => {
+        const cachedResponse = await caches.match(event.request);
+        if (cachedResponse) {
+            // Serve from cache
+            return cachedResponse;
+        }
+        // Perform network request and cache the response
+        const fetchRes = await fetch(event.request);
+        if (fetchRes.ok || fetchRes.type === 'opaque') {
             const cache = await caches.open(cacheName);
             cache.put(event.request, fetchRes.clone());
-            return fetchRes;
-        })());
-    }
+        }
+        return fetchRes;
+    })());
 });
