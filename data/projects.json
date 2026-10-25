@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T16:31:02.405Z",
+  "generatedAt": "2026-10-25T21:08:14.997Z",
   "pinned": [
     {
       "name": "wamr3d",
@@ -8,7 +8,7 @@
       "homepage": "https://wamr3d.org/",
       "language": "JavaScript",
       "stars": 4,
-      "pushedAt": "2026-10-24T21:18:39Z"
+      "pushedAt": "2026-10-25T20:58:22Z"
     },
     {
       "name": "simple-Blockchain",
@@ -38,15 +38,6 @@
       "pushedAt": "2020-03-30T00:03:42Z"
     },
     {
-      "name": "3d-solar-system",
-      "url": "https://github.com/aymen94/3d-solar-system",
-      "description": "Interactive 3D model of the Solar System with WebVR support",
-      "homepage": "http://aymen.xyz/3d-solar-system/",
-      "language": "JavaScript",
-      "stars": 0,
-      "pushedAt": "2024-10-24T00:03:17Z"
-    },
-    {
       "name": "java-sepa-xml",
       "url": "https://github.com/aymen94/java-sepa-xml",
       "description": "This Java library proviedes SEPA XML files to automate direct debit and credit transfer payment processes.",
@@ -54,18 +45,18 @@
       "language": "",
       "stars": 2,
       "pushedAt": "2019-11-26T19:54:34Z"
-    }
-  ],
-  "recent": [
+    },
     {
       "name": "NeuronDump",
       "url": "https://github.com/aymen94/NeuronDump",
-      "description": "NeuronDump reads GGUF model files (the format used by Ollama and llama.cpp) and shows what is inside: layers, attention heads, vocabulary, chat template, weight statistics. It can then remove unused parts and write a smaller GGUF that still runs in Ollama and llama.cpp.",
+      "description": "Inspect and edit local LLMs (GGUF/Ollama/llama.cpp): layers, heads, vocabulary, chat template, weights. Explore them as a 3D graph, cut layers or heads and see the impact instantly or simulated, then write a smaller GGUF that still runs.",
       "homepage": "http://aymen.xyz/NeuronDump/",
       "language": "Rust",
-      "stars": 0,
-      "pushedAt": "2026-10-25T16:20:16Z"
-    },
+      "stars": 2,
+      "pushedAt": "2026-10-25T19:58:08Z"
+    }
+  ],
+  "recent": [
     {
       "name": "pocketgames",
       "url": "https://github.com/aymen94/pocketgames",
@@ -110,6 +101,15 @@
       "language": "JavaScript",
       "stars": 0,
       "pushedAt": "2026-10-12T14:50:43Z"
+    },
+    {
+      "name": "node-ipconfig",
+      "url": "https://github.com/aymen94/node-ipconfig",
+      "description": "A safe JavaScript API for Windows ipconfig output",
+      "homepage": "",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushedAt": "2026-10-11T22:07:21Z"
     }
   ]
 }
