@@ -64,7 +64,10 @@
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png" />
   <link rel="manifest" href="/manifest.json" />
-  <script type="module" src="/assets/js/webmcp.min.js"></script>
+  <!-- WebMCP tools only do anything where navigator.modelContext exists -->
+  <script type="module">
+    if (navigator.modelContext) import("/assets/js/webmcp.min.js");
+  </script>
   <script src="/assets/js/main.min.js" defer></script>
 </head>
 

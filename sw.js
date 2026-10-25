@@ -4,7 +4,6 @@ const assets = [
     './index.html',
     './assets/css/style.min.css',
     './assets/js/main.min.js',
-    './assets/js/webmcp.min.js',
     './assets/media/aymen-224.avif',
     './assets/media/aymen-224.webp',
     './assets/media/aymen-224.jpg',
