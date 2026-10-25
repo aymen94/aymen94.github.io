@@ -5,7 +5,7 @@ const assets = [
     './assets/css/style.min.css',
     './assets/js/main.min.js',
     './assets/js/webmcp.min.js',
-    './assets/media/aymen.jpg',
+    './assets/media/aymen.png',
     './favicon.ico'
 ];
 
