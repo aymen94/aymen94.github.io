@@ -77,9 +77,9 @@
   <header class="header">
     <div class="header-inner">
       <nav class="nav" aria-label="Sections">
-        <a href="#experience">experience</a>
         <a href="#opensource">open source</a>
         <a href="#projects">projects</a>
+        <a href="#experience">experience</a>
         <a href="#articles">articles</a>
         <a href="#achievements">talks</a>
       </nav>
@@ -121,6 +121,13 @@
     </section>
 
     <div class="social-links">
+      <a href="#contact" id="emailLink" aria-label="Email">
+        <svg xmlns="http://w3.org" class="icon" stroke="currentColor" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+          <rect fill="none" x="64" y="106" width="384" height="300" rx="35" />
+          <path fill="none" d="M74 116l182 145l182-145" />
+        </svg>
+        <span>Email</span>
+      </a>
       <a href="https://github.com/aymen94/" target="_blank" rel="noopener" aria-label="GitHub">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
           <path
@@ -146,36 +153,6 @@
       </a>
     </div>
 
-    <!-- Experience Section: compact; the full history lives on LinkedIn -->
-    <section id="experience" class="card" aria-labelledby="experience-title">
-      <h2 id="experience-title" class="card-title">Experience</h2>
-      <ul class="list">
-        <li>
-          <span class="meta">Acer - 2024 - Present - Ticino, CH</span>
-          <strong>Full Stack Engineer</strong>
-        </li>
-        <li>
-          <span class="meta">Acer - 2022 - 2024 - Ticino, CH</span>
-          <strong>Integration Developer</strong>
-        </li>
-        <li>
-          <span class="meta">Cryms - 2021 - 2022 - Ticino, CH</span>
-          <strong>Full Stack Developer</strong>
-        </li>
-        <li>
-          <span class="meta">UniCredit - 2020 - 2021 - Milan, IT</span>
-          <strong>Software Engineer</strong>
-        </li>
-        <li>
-          <span class="meta">NTT DATA Italia - 2019 - 2020 - Naples, IT</span>
-          <strong>Software Development Engineer</strong>
-        </li>
-      </ul>
-      <div class="more">
-        <a class="pill" href="https://www.linkedin.com/in/aymennaghmouchi/" target="_blank" rel="noopener">Full history on LinkedIn</a>
-      </div>
-    </section>
-
     <!-- Open Source Section -->
     <section id="opensource" class="card" aria-labelledby="opensource-title">
       <h2 id="opensource-title" class="card-title">Open Source</h2>
@@ -184,27 +161,20 @@
           <span class="meta">2018 - Present</span>
           <a href="https://github.com/nodejs/nodejs.org/pulls?q=is%3Apr+reviewed-by%3Aaymen94" target="_blank"
             rel="noopener">Node.js Website Maintainer</a>
-          <p class="small-text">Maintainer and reviewer for nodejs.org, with 600+ pull requests reviewed. I also review
-            for nodejs/learn and doc-kit.</p>
         </li>
         <li>
           <span class="meta">2019 - 2022</span>
           <a href="https://github.com/nodejs/nodejs.dev" target="_blank" rel="noopener">nodejs.dev Team</a>
-          <p class="small-text">Core team member of the nodejs.dev website redesign,
-            contributing to development, documentation, and translations.</p>
         </li>
         <li>
           <span class="meta">2021 - 2022</span>
           <a href="https://www.eclipse.org/lists/jakartaee-tck-dev/msg01718.html" target="_blank" rel="noopener">Jakarta
             EE 10</a>
-          <p class="small-text">Contributed to the Jakarta Concurrency TCK for Jakarta EE 10</p>
         </li>
         <li>
           <span class="meta">2019</span>
           <a href="https://ioapp.it/" target="_blank"
             rel="noopener">IO App - PagoPA</a>
-          <p class="small-text">Added OpenAPI 3 support to io-utils and contributed to openapi-codegen-ts and
-            io-functions, the open source backend of Italy public services applications.</p>
         </li>
       </ul>
     </section>
@@ -299,6 +269,36 @@
       </div>
     </section>
 
+        <!-- Experience Section: compact; the full history lives on LinkedIn -->
+    <section id="experience" class="card" aria-labelledby="experience-title">
+      <h2 id="experience-title" class="card-title">Experience</h2>
+      <ul class="list">
+        <li>
+          <span class="meta">Acer - 2024 - Present - Ticino, CH</span>
+          <strong>Full Stack Engineer</strong>
+        </li>
+        <li>
+          <span class="meta">Acer - 2022 - 2024 - Ticino, CH</span>
+          <strong>Integration Developer</strong>
+        </li>
+        <li>
+          <span class="meta">Cryms - 2021 - 2022 - Ticino, CH</span>
+          <strong>Full Stack Developer</strong>
+        </li>
+        <li>
+          <span class="meta">UniCredit - 2020 - 2021 - Milan, IT</span>
+          <strong>Software Engineer</strong>
+        </li>
+        <li>
+          <span class="meta">NTT DATA Italia - 2019 - 2020 - Naples, IT</span>
+          <strong>Software Development Engineer</strong>
+        </li>
+      </ul>
+      <div class="more">
+        <a class="pill" href="https://www.linkedin.com/in/aymennaghmouchi/" target="_blank" rel="noopener">Full history on LinkedIn</a>
+      </div>
+    </section>
+
     <!-- Articles Section -->
     <section id="articles" class="card" aria-labelledby="articles-title">
       <h2 id="articles-title" class="card-title">Articles</h2>
@@ -326,13 +326,12 @@
         <li>
           <span class="meta">2020 - Present</span>
           <a href="https://fosdem.org/" target="_blank" rel="noopener">FOSDEM</a>
-          <p class="small-text">I've attended Europe's largest open source conference.</p>
         </li>
         <li>
           <span class="meta">2019 - 2021</span>
           <a href="https://www.meetup.com/it-it/gdgcampania/" target="_blank" rel="noopener">Organizer - Google
             Developers Group</a>
-          <p class="small-text">Science and Technology.</p>
+          <p class="small-text">Science, Technology, and Community Building.</p>
         </li>
         <li>
           <span class="meta">2018 - 2020</span>
