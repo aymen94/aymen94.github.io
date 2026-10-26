@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-10-25T21:08:14.997Z",
+  "generatedAt": "2026-10-26T11:09:31.741Z",
   "pinned": [
+    {
+      "name": "NeuronDump",
+      "url": "https://github.com/aymen94/NeuronDump",
+      "description": "Inspect and edit local LLMs (GGUF/Ollama/llama.cpp): layers, heads, vocabulary, chat template, weights. Explore them as a 3D graph, cut layers or heads and see the impact instantly or simulated, then write a smaller GGUF that still runs.",
+      "homepage": "http://aymen.xyz/NeuronDump/",
+      "language": "Rust",
+      "stars": 7,
+      "pushedAt": "2026-10-26T10:42:36Z"
+    },
     {
       "name": "wamr3d",
       "url": "https://github.com/aymen94/wamr3d",
@@ -42,18 +51,9 @@
       "url": "https://github.com/aymen94/java-sepa-xml",
       "description": "This Java library proviedes SEPA XML files to automate direct debit and credit transfer payment processes.",
       "homepage": "",
-      "language": "",
+      "language": "Java",
       "stars": 2,
       "pushedAt": "2019-11-26T19:54:34Z"
-    },
-    {
-      "name": "NeuronDump",
-      "url": "https://github.com/aymen94/NeuronDump",
-      "description": "Inspect and edit local LLMs (GGUF/Ollama/llama.cpp): layers, heads, vocabulary, chat template, weights. Explore them as a 3D graph, cut layers or heads and see the impact instantly or simulated, then write a smaller GGUF that still runs.",
-      "homepage": "http://aymen.xyz/NeuronDump/",
-      "language": "Rust",
-      "stars": 2,
-      "pushedAt": "2026-10-25T19:58:08Z"
     }
   ],
   "recent": [
