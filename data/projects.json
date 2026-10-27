@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-26T11:09:31.741Z",
+  "generatedAt": "2026-10-27T10:37:39.978Z",
   "pinned": [
     {
       "name": "NeuronDump",
       "url": "https://github.com/aymen94/NeuronDump",
-      "description": "Inspect and edit local LLMs (GGUF/Ollama/llama.cpp): layers, heads, vocabulary, chat template, weights. Explore them as a 3D graph, cut layers or heads and see the impact instantly or simulated, then write a smaller GGUF that still runs.",
+      "description": "Look inside any local LLM (GGUF from Ollama, LM Studio, Hugging Face, Jan, llama.cpp): layers, heads, vocabulary, chat template, weights. Explore it as a 3D graph, follow a token through every layer, edit it live (ablate, steer, ban, patch), diff two models, then bake or slim a new GGUF that still runs. CLI, web UI, browser demo. Runs 100% offline",
       "homepage": "http://aymen.xyz/NeuronDump/",
       "language": "Rust",
-      "stars": 7,
-      "pushedAt": "2026-10-26T10:42:36Z"
+      "stars": 8,
+      "pushedAt": "2026-10-26T23:00:11Z"
     },
     {
       "name": "wamr3d",
@@ -47,13 +47,13 @@
       "pushedAt": "2020-03-30T00:03:42Z"
     },
     {
-      "name": "java-sepa-xml",
-      "url": "https://github.com/aymen94/java-sepa-xml",
-      "description": "This Java library proviedes SEPA XML files to automate direct debit and credit transfer payment processes.",
+      "name": "Games-Center",
+      "url": "https://github.com/aymen94/Games-Center",
+      "description": "Games Center Project similar to Origin, Steam, Uplay. Is a Platform store to buy and manage your games. Created with Java Swing and Mysql",
       "homepage": "",
       "language": "Java",
-      "stars": 2,
-      "pushedAt": "2019-11-26T19:54:34Z"
+      "stars": 8,
+      "pushedAt": "2018-09-02T15:22:54Z"
     }
   ],
   "recent": [
