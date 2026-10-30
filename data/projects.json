@@ -1,41 +1,23 @@
 {
-  "generatedAt": "2026-10-29T11:32:50.553Z",
+  "generatedAt": "2026-10-30T11:25:19.547Z",
   "pinned": [
-    {
-      "name": "NeuronDump",
-      "url": "https://github.com/aymen94/NeuronDump",
-      "description": "Look inside any local LLM (GGUF from Ollama, LM Studio, Hugging Face, Jan, llama.cpp): layers, heads, vocabulary, chat template, weights. Explore it as a 3D graph, follow a token through every layer, edit it live (ablate, steer, ban, patch), diff two models, then bake or slim a new GGUF that still runs. CLI, web UI, browser demo. Runs 100% offline",
-      "homepage": "http://aymen.xyz/NeuronDump/",
-      "language": "Rust",
-      "stars": 12,
-      "pushedAt": "2026-10-27T22:08:41Z"
-    },
     {
       "name": "wamr3d",
       "url": "https://github.com/aymen94/wamr3d",
-      "description": "WAMR3D: 3D engine in Rust and WebAssembly, built for WebGPU/WebGL",
+      "description": "WAMR3D: 3D engine in Rust and WebAssembly, built for WebGPU/WebGL, featuring the familiar three.js API.",
       "homepage": "https://wamr3d.org/",
       "language": "JavaScript",
       "stars": 4,
       "pushedAt": "2026-10-25T20:58:22Z"
     },
     {
-      "name": "simple-Blockchain",
-      "url": "https://github.com/aymen94/simple-Blockchain",
-      "description": "small tutorial with code to try to create your blockchain 🔝",
-      "homepage": "https://medium.com/@aymennaghmouchi/how-to-work-blockchain-2b8631052335",
-      "language": "TypeScript",
-      "stars": 24,
-      "pushedAt": "2018-09-15T21:43:57Z"
-    },
-    {
-      "name": "springboot-openapi-mongodb",
-      "url": "https://github.com/aymen94/springboot-openapi-mongodb",
-      "description": "Example project with Java, Maven, Spring Boot, JUnit, Docker and OpenAPI 3.0 specification",
-      "homepage": "",
-      "language": "Java",
-      "stars": 4,
-      "pushedAt": "2024-08-26T16:38:44Z"
+      "name": "NeuronDump",
+      "url": "https://github.com/aymen94/NeuronDump",
+      "description": "Look inside any local LLM (GGUF from Ollama, LM Studio, Hugging Face, Jan, llama.cpp): layers, heads, vocabulary, chat template, weights. Explore it as a 3D graph, follow a token through every layer, edit it live (ablate, steer, ban, patch), diff two models, then bake or slim a new GGUF that still runs. CLI, web UI, browser demo. Runs 100% offline",
+      "homepage": "http://aymen.xyz/NeuronDump/",
+      "language": "Rust",
+      "stars": 13,
+      "pushedAt": "2026-10-27T22:08:41Z"
     },
     {
       "name": "WebRAGStudio",
@@ -45,6 +27,24 @@
       "language": "TypeScript",
       "stars": 0,
       "pushedAt": "2026-10-08T19:10:39Z"
+    },
+    {
+      "name": "AI-on-Chrome-gemini-nano",
+      "url": "https://github.com/aymen94/AI-on-Chrome-gemini-nano",
+      "description": "",
+      "homepage": "https://aymen94.github.io/AI-on-Chrome-gemini-nano/",
+      "language": "JavaScript",
+      "stars": 2,
+      "pushedAt": "2025-02-10T20:27:36Z"
+    },
+    {
+      "name": "simple-Blockchain",
+      "url": "https://github.com/aymen94/simple-Blockchain",
+      "description": "small tutorial with code to try to create your blockchain 🔝",
+      "homepage": "https://medium.com/@aymennaghmouchi/how-to-work-blockchain-2b8631052335",
+      "language": "TypeScript",
+      "stars": 24,
+      "pushedAt": "2018-09-15T21:43:57Z"
     }
   ],
   "recent": [
