@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T10:56:28.673Z",
+  "generatedAt": "2026-11-01T11:51:31.934Z",
   "pinned": [
     {
       "name": "wamr3d",
@@ -7,7 +7,7 @@
       "description": "WAMR3D: 3D engine in Rust and WebAssembly, built for WebGPU/WebGL, featuring the familiar three.js API.",
       "homepage": "https://wamr3d.org/",
       "language": "JavaScript",
-      "stars": 4,
+      "stars": 5,
       "pushedAt": "2026-10-25T20:58:22Z"
     },
     {
