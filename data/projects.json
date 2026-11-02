@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T11:51:31.934Z",
+  "generatedAt": "2026-11-02T13:32:33.937Z",
   "pinned": [
     {
       "name": "wamr3d",
@@ -16,7 +16,7 @@
       "description": "Look inside any local LLM (GGUF from Ollama, LM Studio, Hugging Face, Jan, llama.cpp): layers, heads, vocabulary, chat template, weights. Explore it as a 3D graph, follow a token through every layer, edit it live (ablate, steer, ban, patch), diff two models, then bake or slim a new GGUF that still runs. CLI, web UI, browser demo. Runs 100% offline",
       "homepage": "http://aymen.xyz/NeuronDump/",
       "language": "Rust",
-      "stars": 15,
+      "stars": 16,
       "pushedAt": "2026-10-27T22:08:41Z"
     },
     {
