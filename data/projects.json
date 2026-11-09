@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T13:56:05.223Z",
+  "generatedAt": "2026-11-09T23:36:42.304Z",
   "pinned": [
     {
       "name": "wamr3d",
@@ -36,6 +36,24 @@
       "language": "TypeScript",
       "stars": 24,
       "pushedAt": "2018-09-15T21:43:57Z"
+    },
+    {
+      "name": "WebRAGStudio",
+      "url": "https://github.com/aymen94/WebRAGStudio",
+      "description": "A self-hostable RAG app for indexing documents locally and chatting with your data using OpenAI, Ollama, or compatible LLMs with chat",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 0,
+      "pushedAt": "2026-10-08T19:10:39Z"
+    },
+    {
+      "name": "magicwebtools",
+      "url": "https://github.com/aymen94/magicwebtools",
+      "description": "",
+      "homepage": "https://a4bcd9d7.magicwebtools.pages.dev",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushedAt": "2026-10-01T15:04:31Z"
     }
   ],
   "recent": [
