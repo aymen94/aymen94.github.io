@@ -1,4 +1,4 @@
-const cacheName = "aymenn.xyz-v2.0.0";
+const cacheName = "aymenn.xyz-v2.0.1";
 const assets = [
     './',
     './index.html',
@@ -30,7 +30,6 @@ self.addEventListener('install', event => {
     })());
 });
 
-// Other GitHub Pages projects live under this origin (e.g. /NeuronDump/, /skyhunter/).
 // Only the root site is handled here; anything else goes straight to the network.
 const isRootSite = url =>
     url.origin === self.location.origin &&

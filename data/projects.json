@@ -76,15 +76,6 @@
       "pushedAt": "2026-10-23T16:34:39Z"
     },
     {
-      "name": "skyhunter",
-      "url": "https://github.com/aymen94/skyhunter",
-      "description": "3D drone simulator with WAMR3D",
-      "homepage": "http://aymen.xyz/skyhunter/",
-      "language": "JavaScript",
-      "stars": 0,
-      "pushedAt": "2026-10-23T16:11:31Z"
-    },
-    {
       "name": "openapi-to-webmcp",
       "url": "https://github.com/aymen94/openapi-to-webmcp",
       "description": "Generate browser side WebMCP tools from OpenAPI 3.x (JSON/YAML), outputs JavaScript ES modules via CLI.",
