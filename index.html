@@ -57,6 +57,7 @@
         : mode;
       document.documentElement.setAttribute("data-theme", theme);
       document.documentElement.setAttribute("data-theme-mode", mode);
+      document.documentElement.classList.add("js");
     })();
   </script>
 
@@ -126,7 +127,7 @@
           <rect fill="none" x="64" y="106" width="384" height="300" rx="35" />
           <path fill="none" d="M74 116l182 145l182-145" />
         </svg>
-        <span>Email</span>
+        <span id="emailLabel">Email</span>
       </a>
       <a href="https://github.com/aymen94/" target="_blank" rel="noopener" aria-label="GitHub">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
@@ -182,17 +183,28 @@
     <!-- Projects Section -->
     <section id="projects" class="card" aria-labelledby="projects-title">
       <h2 id="projects-title" class="card-title">Projects</h2>
-      <!-- Filled by main.js from data/projects.json and the public GitHub API -->
-      <div id="pinnedGroup" class="project-group" hidden>
+      <!-- Pinned and recently updated GitHub repositories, kept up to date by hand -->
+      <div id="pinnedGroup" class="project-group">
         <h3 class="subhead">Pinned on GitHub</h3>
-        <ul id="pinnedList" class="list grid"></ul>
+        <ul id="pinnedList" class="list grid">
+          <li><span class="meta">JavaScript</span><a href="https://github.com/aymen94/wamr3d" target="_blank" rel="noopener">wamr3d</a><p class="small-text">WAMR3D: 3D engine in Rust and WebAssembly, built for WebGPU/WebGL, featuring the familiar three.js API.</p><div class="links"><a href="https://wamr3d.org/" target="_blank" rel="noopener">Website</a></div></li>
+          <li><span class="meta">Rust</span><a href="https://github.com/aymen94/NeuronDump" target="_blank" rel="noopener">NeuronDump</a><p class="small-text">Look inside any local LLM (GGUF from Ollama, LM Studio, Hugging Face, Jan, llama.cpp): layers, heads, vocabulary, chat template, weights. Explore it as a 3D graph, follow a token through every layer, edit it live (ablate, steer, ban, patch), diff two models, then bake or slim a new GGUF that still runs. CLI, web UI, browser demo. Runs 100% offline</p><div class="links"><a href="http://aymen.xyz/NeuronDump/" target="_blank" rel="noopener">Website</a></div></li>
+          <li><span class="meta">JavaScript</span><a href="https://github.com/aymen94/AI-on-Chrome-gemini-nano" target="_blank" rel="noopener">AI-on-Chrome-gemini-nano</a><div class="links"><a href="https://aymen94.github.io/AI-on-Chrome-gemini-nano/" target="_blank" rel="noopener">Website</a></div></li>
+          <li><span class="meta">TypeScript</span><a href="https://github.com/aymen94/simple-Blockchain" target="_blank" rel="noopener">simple-Blockchain</a><p class="small-text">small tutorial with code to try to create your blockchain 🔝</p><div class="links"><a href="https://medium.com/@aymennaghmouchi/how-to-work-blockchain-2b8631052335" target="_blank" rel="noopener">Website</a></div></li>
+          <li><span class="meta">TypeScript</span><a href="https://github.com/aymen94/WebRAGStudio" target="_blank" rel="noopener">WebRAGStudio</a><p class="small-text">A self-hostable RAG app for indexing documents locally and chatting with your data using OpenAI, Ollama, or compatible LLMs with chat</p></li>
+          <li><span class="meta">JavaScript</span><a href="https://github.com/aymen94/magicwebtools" target="_blank" rel="noopener">magicwebtools</a><div class="links"><a href="https://a4bcd9d7.magicwebtools.pages.dev" target="_blank" rel="noopener">Website</a></div></li>
+        </ul>
       </div>
-      <div id="recentGroup" class="project-group" hidden>
+      <div id="recentGroup" class="project-group">
         <h3 class="subhead">Recently updated</h3>
-        <ul id="recentList" class="list grid"></ul>
+        <ul id="recentList" class="list grid">
+          <li><span class="meta">JavaScript - updated 2026-10-24</span><a href="https://github.com/aymen94/pocketgames" target="_blank" rel="noopener">pocketgames</a><p class="small-text">Free browser games, play instantly, no downloads. Rendered with WAMR3D.</p><div class="links"><a href="http://aymen.xyz/pocketgames/" target="_blank" rel="noopener">Website</a></div></li>
+          <li><span class="meta">TypeScript - updated 2026-10-23</span><a href="https://github.com/aymen94/cellverse" target="_blank" rel="noopener">cellverse</a><p class="small-text">Interactive 3D explorer of a eukaryotic animal cell, the chemical elements of life and biological macromolecules, with a rule-based molecular assembly lab, rendered with WAMR3D.</p><div class="links"><a href="http://aymen.xyz/cellverse/" target="_blank" rel="noopener">Website</a></div></li>
+          <li><span class="meta">JavaScript - updated 2026-10-23</span><a href="https://github.com/aymen94/skyhunter" target="_blank" rel="noopener">skyhunter</a><p class="small-text">3D drone simulator with WAMR3D</p><div class="links"><a href="http://aymen.xyz/skyhunter/" target="_blank" rel="noopener">Website</a></div></li>
+        </ul>
       </div>
-      <h3 id="moreProjectsTitle" class="subhead" hidden>More projects</h3>
-      <ul id="projectList" class="list grid">
+      <h3 id="moreProjectsTitle" class="subhead">More projects</h3>
+      <ul id="projectList" class="list grid collapsed">
         <li>
           <span class="meta">JavaScript - npm</span>
           <a href="https://github.com/aymen94/snekweb" target="_blank" rel="noopener">snekweb</a>
@@ -203,7 +215,7 @@
           <a href="https://github.com/aymen94/node-ipconfig" target="_blank" rel="noopener">node-ipconfig</a>
           <p class="small-text">A safe, promise-based API for parsing Windows network configuration from ipconfig.exe, with JSON, XML, YAML, CSV and NDJSON output.</p>
         </li>
-        <li>
+        <li hidden>
           <span class="meta">TypeScript - Next.js</span>
           <a href="https://github.com/aymen94/WebRAGStudio" target="_blank" rel="noopener">WebRAGStudio</a>
           <p class="small-text">A self-hosted RAG workspace for indexing local documents and chatting with them through OpenAI, Ollama or compatible LLM providers.</p>
@@ -220,7 +232,7 @@
           <p class="small-text">A fast, Markdown-first blogging platform with tags, dark mode, reading time and
             SEO-ready output.</p>
         </li>
-        <li>
+        <li hidden>
           <span class="meta">JavaScript</span>
           <a href="https://aymen.xyz/AI-on-Chrome-gemini-nano/" target="_blank" rel="noopener">AI on Chrome - Gemini
             Nano</a>
@@ -262,8 +274,8 @@
         </li>
       </ul>
       <div class="more">
-        <!-- Shown by main.js; without JS every project is visible -->
-        <button id="projectsToggle" class="pill" type="button" aria-controls="projectList" aria-expanded="false" hidden>Show more</button>
+        <!-- Only used with JS; without JS every project is visible -->
+        <button id="projectsToggle" class="pill" type="button" aria-controls="projectList" aria-expanded="false">Show all 10 projects</button>
         <a class="pill" href="https://github.com/aymen94?tab=repositories" target="_blank" rel="noopener">All GitHub repositories</a>
         <a class="pill" href="https://www.npmjs.com/~aymen94" target="_blank" rel="noopener">npm packages</a>
       </div>

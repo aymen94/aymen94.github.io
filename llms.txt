@@ -1,0 +1,35 @@
+# Aymen Naghmouchi
+
+> Personal site of Aymen Naghmouchi, a Software Engineer based in Ticino, Switzerland. Node.js website maintainer, open source contributor to Node.js and Jakarta EE, and a Google Summer of Code 2019 alumnus.
+
+The site is a single page at https://aymen.xyz/ with sections for open source work, projects, experience, articles and talks. Project data comes from GitHub. Several projects are hosted as subpaths of this domain (for example https://aymen.xyz/NeuronDump/).
+
+## Profiles
+
+- [GitHub](https://github.com/aymen94): source code for all projects
+- [LinkedIn](https://www.linkedin.com/in/aymennaghmouchi/): full work history
+- [Stack Overflow](https://stackoverflow.com/users/4671263/aymen)
+- [Medium](https://medium.com/@aymennaghmouchi): articles
+- [npm](https://www.npmjs.com/~aymen94): published packages
+
+## Open source
+
+- [Node.js website](https://github.com/nodejs/nodejs.org): maintainer since 2018
+- [nodejs.dev](https://github.com/nodejs/nodejs.dev): team member, 2019-2022
+- [Jakarta EE 10](https://www.eclipse.org/lists/jakartaee-tck-dev/msg01718.html): contributor, 2021-2022
+- [Google Summer of Code 2019](https://summerofcode.withgoogle.com/archive/2019/projects/6232664103714816): OpenAPI 3 support for io-utils with Developers Italia
+
+## Projects
+
+- [WAMR3D](https://wamr3d.org/): 3D engine in Rust and WebAssembly for WebGPU/WebGL with a three.js-style API
+- [NeuronDump](https://aymen.xyz/NeuronDump/): inspect, edit and diff local LLMs (GGUF), fully offline
+- [snekweb](https://github.com/aymen94/snekweb): dependency-free Node.js HTTP framework
+- [node-ipconfig](https://github.com/aymen94/node-ipconfig): promise-based parser for Windows ipconfig output
+- [WebRAGStudio](https://github.com/aymen94/WebRAGStudio): self-hosted RAG workspace for local documents
+- [magicwebtools](https://magicwebtools.pages.dev): 900+ in-browser developer tools
+- [Project data (JSON)](https://aymen.xyz/data/projects.json): pinned and recently updated GitHub repositories
+
+## Optional
+
+- [My Experience with GSoC 2019](https://medium.com/@aymennaghmouchi/my-experience-about-google-summer-of-code-2019-d73907a5d55b)
+- [How Blockchain Works](https://medium.com/@aymennaghmouchi/how-to-work-blockchain-2b8631052335)

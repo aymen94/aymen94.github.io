@@ -424,7 +424,11 @@ section + section {
   color: var(--accent);
 }
 
-.grid.collapsed li:nth-child(n + 5) {
+.js .grid.collapsed > li:nth-child(n + 5 of :not([hidden])) {
+  display: none;
+}
+
+html:not(.js) #projectsToggle {
   display: none;
 }
 

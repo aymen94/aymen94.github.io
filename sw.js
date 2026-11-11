@@ -1,4 +1,4 @@
-const cacheName = "aymenn.xyz-v1.1.1";
+const cacheName = "aymenn.xyz-v2.0.0";
 const assets = [
     './',
     './index.html',
@@ -40,29 +40,9 @@ const isRootSite = url =>
         url.pathname === '/manifest.json' ||
         url.pathname.startsWith('/assets/'));
 
-// Project data must stay fresh: network first, cache only as an offline fallback.
-const isLiveData = url =>
-    url.hostname === 'api.github.com' ||
-    (url.origin === self.location.origin && url.pathname.startsWith('/data/'));
-
 self.addEventListener('fetch', event => {
     if (event.request.method !== 'GET') return;
     const url = new URL(event.request.url);
-    if (isLiveData(url)) {
-        event.respondWith((async () => {
-            const cache = await caches.open(cacheName);
-            try {
-                const fetchRes = await fetch(event.request);
-                if (fetchRes.ok) cache.put(event.request, fetchRes.clone());
-                return fetchRes;
-            } catch (e) {
-                const cachedResponse = await cache.match(event.request);
-                if (cachedResponse) return cachedResponse;
-                throw e;
-            }
-        })());
-        return;
-    }
     // Same-origin paths outside the root site (other projects) are not touched.
     if (url.origin === self.location.origin ? !isRootSite(url) : !url.protocol.startsWith('http')) return;
     event.respondWith((async () => {
