@@ -214,10 +214,9 @@ a:hover {
 .avatar {
   flex: 0 0 auto;
   width: 112px;
-  height: 112px;
-  object-fit: cover;
+  height: auto;
   border: 1px solid var(--border);
-  border-radius: 50%;
+  border-radius: 12px;
 }
 
 .prompt {
@@ -485,7 +484,6 @@ section + section {
 
   .avatar {
     width: 88px;
-    height: 88px;
   }
 
   .grid {
