@@ -27,6 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.getElementById("emailPopupOpen").addEventListener("click", () => {
-    window.alert(["aymenadvance", "@", "gmail.com"].join(""));
+    window.prompt("Email:", ["aymenadvance", "@", "gmail.com"].join(""));
   });
 });

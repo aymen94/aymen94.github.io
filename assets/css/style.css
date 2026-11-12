@@ -112,9 +112,7 @@ a:hover,
 .theme-toggle {
   display: grid;
   place-items: center;
-  width: 2.25rem;
-  height: 2.25rem;
-  padding: 0.35rem;
+  height: auto;
   border: 1px solid currentColor;
   color: inherit;
   background: transparent;
