@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-11T12:44:40.472Z",
+  "generatedAt": "2026-11-12T18:15:38.542Z",
   "pinned": [
     {
       "name": "wamr3d",
       "url": "https://github.com/aymen94/wamr3d",
-      "description": "A 3D engine written in Rust and WebAssembly, with WebGPU and WebGL backends and a three.js-style API.",
+      "description": "WAMR3D: 3D engine in Rust and WebAssembly, built for WebGPU/WebGL, featuring the familiar three.js API.",
       "homepage": "https://wamr3d.org/",
       "language": "JavaScript",
-      "pushedAt": "2026-10-25T20:58:22Z"
+      "pushedAt": "2026-11-11T22:09:49Z"
     },
     {
       "name": "NeuronDump",
       "url": "https://github.com/aymen94/NeuronDump",
-      "description": "A local toolkit for inspecting and editing GGUF models. It includes a CLI, web UI, and browser demo, and works offline.",
+      "description": "Look inside any local LLM (GGUF from Ollama, LM Studio, Hugging Face, Jan, llama.cpp): layers, heads, vocabulary, chat template, weights. Explore it as a 3D graph, follow a token through every layer, edit it live (ablate, steer, ban, patch), diff two models, then bake or slim a new GGUF that still runs. CLI, web UI, browser demo. Runs 100% offline",
       "homepage": "http://aymen.xyz/NeuronDump/",
       "language": "Rust",
       "pushedAt": "2026-11-10T22:31:32Z"
@@ -20,7 +20,7 @@
     {
       "name": "AI-on-Chrome-gemini-nano",
       "url": "https://github.com/aymen94/AI-on-Chrome-gemini-nano",
-      "description": "",
+      "description": "A React application demonstrating Chrome experimental Gemini Nano AI. This project shows how to activate and interact with the Nano AI API and includes a chat interface.",
       "homepage": "https://aymen94.github.io/AI-on-Chrome-gemini-nano/",
       "language": "JavaScript",
       "pushedAt": "2025-02-10T20:27:36Z"
@@ -36,7 +36,7 @@
     {
       "name": "WebRAGStudio",
       "url": "https://github.com/aymen94/WebRAGStudio",
-      "description": "A self-hosted app for indexing local documents and chatting with them through OpenAI, Ollama, or compatible providers.",
+      "description": "A self-hostable RAG app for indexing documents locally and chatting with your data using OpenAI, Ollama, or compatible LLMs with chat",
       "homepage": "",
       "language": "TypeScript",
       "pushedAt": "2026-10-08T19:10:39Z"
@@ -44,7 +44,7 @@
     {
       "name": "magicwebtools",
       "url": "https://github.com/aymen94/magicwebtools",
-      "description": "",
+      "description": "A fast, private suite of developer utilities, convert, generate, inspect and transform, all in your browser. No signup, no uploads, no limits.",
       "homepage": "https://a4bcd9d7.magicwebtools.pages.dev",
       "language": "JavaScript",
       "pushedAt": "2026-10-01T15:04:31Z"
@@ -57,7 +57,7 @@
       "description": "Free browser games, play instantly, no downloads. Rendered with WAMR3D.",
       "homepage": "http://aymen.xyz/pocketgames/",
       "language": "JavaScript",
-      "pushedAt": "2026-10-24T21:32:05Z"
+      "pushedAt": "2026-11-11T23:52:42Z"
     },
     {
       "name": "cellverse",
@@ -65,7 +65,7 @@
       "description": "Interactive 3D explorer of a eukaryotic animal cell, the chemical elements of life and biological macromolecules, with a rule-based molecular assembly lab, rendered with WAMR3D.",
       "homepage": "http://aymen.xyz/cellverse/",
       "language": "TypeScript",
-      "pushedAt": "2026-10-23T16:34:39Z"
+      "pushedAt": "2026-11-11T23:50:43Z"
     },
     {
       "name": "openapi-to-webmcp",
@@ -90,6 +90,14 @@
       "homepage": "",
       "language": "JavaScript",
       "pushedAt": "2026-10-11T22:07:21Z"
+    },
+    {
+      "name": "devblog",
+      "url": "https://github.com/aymen94/devblog",
+      "description": "",
+      "homepage": "",
+      "language": "JavaScript",
+      "pushedAt": "2026-10-01T17:58:32Z"
     }
   ]
 }
