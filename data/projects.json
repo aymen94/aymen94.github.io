@@ -4,19 +4,17 @@
     {
       "name": "wamr3d",
       "url": "https://github.com/aymen94/wamr3d",
-      "description": "WAMR3D: 3D engine in Rust and WebAssembly, built for WebGPU/WebGL, featuring the familiar three.js API.",
+      "description": "A 3D engine written in Rust and WebAssembly, with WebGPU and WebGL backends and a three.js-style API.",
       "homepage": "https://wamr3d.org/",
       "language": "JavaScript",
-      "stars": 5,
       "pushedAt": "2026-10-25T20:58:22Z"
     },
     {
       "name": "NeuronDump",
       "url": "https://github.com/aymen94/NeuronDump",
-      "description": "Look inside any local LLM (GGUF from Ollama, LM Studio, Hugging Face, Jan, llama.cpp): layers, heads, vocabulary, chat template, weights. Explore it as a 3D graph, follow a token through every layer, edit it live (ablate, steer, ban, patch), diff two models, then bake or slim a new GGUF that still runs. CLI, web UI, browser demo. Runs 100% offline",
+      "description": "A local toolkit for inspecting and editing GGUF models. It includes a CLI, web UI, and browser demo, and works offline.",
       "homepage": "http://aymen.xyz/NeuronDump/",
       "language": "Rust",
-      "stars": 18,
       "pushedAt": "2026-11-10T22:31:32Z"
     },
     {
@@ -25,7 +23,6 @@
       "description": "",
       "homepage": "https://aymen94.github.io/AI-on-Chrome-gemini-nano/",
       "language": "JavaScript",
-      "stars": 2,
       "pushedAt": "2025-02-10T20:27:36Z"
     },
     {
@@ -34,16 +31,14 @@
       "description": "small tutorial with code to try to create your blockchain 🔝",
       "homepage": "https://medium.com/@aymennaghmouchi/how-to-work-blockchain-2b8631052335",
       "language": "TypeScript",
-      "stars": 24,
       "pushedAt": "2018-09-15T21:43:57Z"
     },
     {
       "name": "WebRAGStudio",
       "url": "https://github.com/aymen94/WebRAGStudio",
-      "description": "A self-hostable RAG app for indexing documents locally and chatting with your data using OpenAI, Ollama, or compatible LLMs with chat",
+      "description": "A self-hosted app for indexing local documents and chatting with them through OpenAI, Ollama, or compatible providers.",
       "homepage": "",
       "language": "TypeScript",
-      "stars": 0,
       "pushedAt": "2026-10-08T19:10:39Z"
     },
     {
@@ -52,7 +47,6 @@
       "description": "",
       "homepage": "https://a4bcd9d7.magicwebtools.pages.dev",
       "language": "JavaScript",
-      "stars": 0,
       "pushedAt": "2026-10-01T15:04:31Z"
     }
   ],
@@ -63,7 +57,6 @@
       "description": "Free browser games, play instantly, no downloads. Rendered with WAMR3D.",
       "homepage": "http://aymen.xyz/pocketgames/",
       "language": "JavaScript",
-      "stars": 1,
       "pushedAt": "2026-10-24T21:32:05Z"
     },
     {
@@ -72,7 +65,6 @@
       "description": "Interactive 3D explorer of a eukaryotic animal cell, the chemical elements of life and biological macromolecules, with a rule-based molecular assembly lab, rendered with WAMR3D.",
       "homepage": "http://aymen.xyz/cellverse/",
       "language": "TypeScript",
-      "stars": 0,
       "pushedAt": "2026-10-23T16:34:39Z"
     },
     {
@@ -81,7 +73,6 @@
       "description": "Generate browser side WebMCP tools from OpenAPI 3.x (JSON/YAML), outputs JavaScript ES modules via CLI.",
       "homepage": "",
       "language": "JavaScript",
-      "stars": 0,
       "pushedAt": "2026-10-12T20:08:31Z"
     },
     {
@@ -90,7 +81,6 @@
       "description": "Snekweb is a small, JavaScript-first HTTP framework for Node.js ",
       "homepage": "https://aymen94.github.io/snekweb/",
       "language": "JavaScript",
-      "stars": 0,
       "pushedAt": "2026-10-12T14:50:43Z"
     },
     {
@@ -99,7 +89,6 @@
       "description": "A safe JavaScript API for Windows ipconfig output",
       "homepage": "",
       "language": "JavaScript",
-      "stars": 0,
       "pushedAt": "2026-10-11T22:07:21Z"
     }
   ]

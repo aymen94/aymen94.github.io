@@ -6,18 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aymen Naghmouchi - Software Engineer</title>
   <meta name="description"
-    content="Aymen Naghmouchi, Software Engineer and Node.js website maintainer. open source contributor to Node.js and Jakarta EE, and a Google Summer of Code alumnus." />
+    content="Hey, I’m Aymen. I build software, write, and make side projects. I’m currently in Ticino, Switzerland." />
   <meta name="author" content="Aymen Naghmouchi" />
   <link rel="canonical" href="https://aymen.xyz/" />
-  <meta name="color-scheme" content="dark light" />
-  <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)" />
+  <meta name="color-scheme" content="light dark" />
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)" />
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="profile" />
   <meta property="og:site_name" content="Aymen Naghmouchi" />
   <meta property="og:title" content="Aymen Naghmouchi - Software Engineer" />
-  <meta property="og:description" content="Node.js website maintainer and open source contributor." />
+  <meta property="og:description"
+    content="Hey, I’m Aymen. I build software, write, and make side projects. I’m currently in Ticino, Switzerland." />
   <meta property="og:url" content="https://aymen.xyz/" />
   <meta property="og:image" content="https://aymen.xyz/assets/media/aymen.jpg" />
   <meta property="og:image:width" content="1580" />
@@ -43,116 +44,83 @@
     }
   </script>
 
-  <!-- Apply the theme before first paint to avoid a flash.
-       Default is "system" (follows the OS); "light" and "dark" are explicit choices. -->
-  <script>
-    (function () {
-      var mode = "system";
-      try {
-        var saved = localStorage.getItem("theme");
-        if (saved === "light" || saved === "dark") mode = saved;
-      } catch (e) { }
-      var theme = mode === "system"
-        ? (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark")
-        : mode;
-      document.documentElement.setAttribute("data-theme", theme);
-      document.documentElement.setAttribute("data-theme-mode", mode);
-      document.documentElement.classList.add("js");
-    })();
-  </script>
-
   <link rel="stylesheet" href="/assets/css/style.min.css" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
-  <link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png" />
-  <link rel="manifest" href="/manifest.json" />
-  <!-- WebMCP tools only do anything where navigator.modelContext exists -->
-  <script type="module">
-    if (navigator.modelContext) import("/assets/js/webmcp.min.js");
-  </script>
-  <script src="/assets/js/main.min.js" defer></script>
 </head>
 
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="header">
-    <div class="header-inner">
-      <nav class="nav" aria-label="Sections">
-        <a href="#opensource">open source</a>
-        <a href="#projects">projects</a>
-        <a href="#experience">experience</a>
-        <a href="#articles">articles</a>
-        <a href="#achievements">talks</a>
-      </nav>
-      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Theme: system. Switch to light">
-        <!-- Monitor: shown when following the system theme -->
-        <svg class="icon-system" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <rect x="3" y="4" width="18" height="12" rx="2" />
-          <path d="M8 20h8M12 16v4" />
-        </svg>
-        <!-- Sun: shown for the light theme -->
-        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <circle cx="12" cy="12" r="4" />
-          <path
-            d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
-        </svg>
-        <!-- Moon: shown for the dark theme -->
-        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-        </svg>
-      </button>
-    </div>
+    <nav class="nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#opensource">Open source</a>
+      <a href="#writing">Writing &amp; talks</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Theme: system (default)"
+      title="Theme: system (default)" hidden>
+      <svg class="theme-icon theme-icon-system" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <rect x="3" y="4" width="18" height="13" rx="2" />
+        <path d="M8 21h8m-4-4v4" />
+      </svg>
+      <svg class="theme-icon theme-icon-light" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="4" />
+        <path
+          d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+      </svg>
+      <svg class="theme-icon theme-icon-dark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z" />
+      </svg>
+    </button>
   </header>
 
   <main id="main" class="container">
     <!-- Hero -->
-    <section class="hero" aria-labelledby="name">
+    <section id="about" class="hero" aria-labelledby="name">
       <picture>
-        <source type="image/avif" srcset="/assets/media/aymen-112.avif 112w, /assets/media/aymen-224.avif 224w, /assets/media/aymen-336.avif 336w" sizes="(max-width: 600px) 88px, 112px" />
-        <source type="image/webp" srcset="/assets/media/aymen-112.webp 112w, /assets/media/aymen-224.webp 224w, /assets/media/aymen-336.webp 336w" sizes="(max-width: 600px) 88px, 112px" />
-        <img class="avatar" src="/assets/media/aymen-224.jpg" width="112" height="160" alt="Aymen Naghmouchi" fetchpriority="high" decoding="async" />
+        <source type="image/avif"
+          srcset="/assets/media/aymen-112.avif 112w, /assets/media/aymen-224.avif 224w, /assets/media/aymen-336.avif 336w"
+          sizes="(max-width: 600px) 88px, 112px" />
+        <source type="image/webp"
+          srcset="/assets/media/aymen-112.webp 112w, /assets/media/aymen-224.webp 224w, /assets/media/aymen-336.webp 336w"
+          sizes="(max-width: 600px) 88px, 112px" />
+        <img class="avatar" src="/assets/media/aymen-224.jpg" width="112" height="160" alt="Aymen Naghmouchi" />
       </picture>
       <div class="hero-text">
         <h1 id="name">Aymen Naghmouchi</h1>
-        <p class="title highlights">Software Engineer</p>
         <p class="description">
-          Full stack engineer, in free time I do stuff like coding side projects and exploring new technologies.
+          Hey, I’m Aymen. I build software, write, and make things to see where an idea goes.
         </p>
+        <p class="description">I’m currently in Ticino, Switzerland. Have a project in mind or want to talk open source?
+          Let’s chat.</p>
       </div>
     </section>
 
-    <div class="social-links">
-      <a href="#copy-email" id="emailLink" aria-label="Copy email address">
-        <svg xmlns="http://w3.org" class="icon" stroke="currentColor" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
-          <rect fill="none" x="64" y="106" width="384" height="300" rx="35" />
-          <path fill="none" d="M74 116l182 145l182-145" />
-        </svg>
-        <span id="emailLabel">Email</span>
-      </a>
-      <a href="https://github.com/aymen94/" target="_blank" rel="noopener" aria-label="GitHub">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
-          <path
-            d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z" />
-        </svg>
-        <span>GitHub</span>
-      </a>
-      <a href="https://www.linkedin.com/in/aymennaghmouchi/" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
-          <path
-            d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z" />
-        </svg>
-        <span>LinkedIn</span>
-      </a>
-      <a href="https://stackoverflow.com/users/4671263/aymen" target="_blank" rel="noopener"
-        aria-label="Stack Overflow">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon" stroke-width="30" viewBox="0 0 512 512" aria-hidden="true"
-          focusable="false">
-          <path fill="none" d="M125 297v105h241V297" />
-          <path d="M170 341h150m-144-68l148 31M199 204l136 64m-95-129l115 97M293 89l90 120" />
-        </svg>
-        <span>Stack Overflow</span>
-      </a>
-    </div>
+    <nav aria-label="Follow my work">
+      <ul class="link-list">
+        <li><button class="link-button" id="emailPopupOpen" type="button"><svg width="18" height="18"
+              viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M3 5h18v14H3V5Zm1.5 1.5 7.5 6 7.5-6" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>Email</button></li>
+        <li><a href="https://github.com/aymen94/" target="_blank" rel="noopener"><svg width="18" height="18"
+              viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.6.1.8-.3.8-.6v-2.1c-3.1.7-3.8-1.3-3.8-1.3-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.6 1.2 3.2.9.1-.7.4-1.2.7-1.5-2.5-.3-5.2-1.2-5.2-5.5 0-1.2.4-2.2 1.2-3-.1-.3-.5-1.4.1-3 0 0 1-.3 3.1 1.2a10.7 10.7 0 0 1 5.7 0c2.2-1.5 3.1-1.2 3.1-1.2.6 1.6.2 2.7.1 3 .8.8 1.2 1.8 1.2 3 0 4.3-2.6 5.2-5.2 5.5.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6A11.1 11.1 0 0 0 12 .9Z" />
+            </svg>GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/aymennaghmouchi/" target="_blank" rel="noopener"><svg width="18"
+              height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                d="M5.2 3.2a2.1 2.1 0 1 1 0 4.2 2.1 2.1 0 0 1 0-4.2ZM3.4 9h3.7v11.6H3.4V9Zm5.9 0h3.5v1.6h.1c.5-.9 1.7-2 3.5-2 3.8 0 4.5 2.5 4.5 5.7v6.3h-3.7V15c0-1.3 0-3-1.9-3s-2.2 1.4-2.2 2.9v5.7H9.3V9Z" />
+            </svg>LinkedIn</a></li>
+        <li><a href="https://stackoverflow.com/users/4671263/aymen" target="_blank" rel="noopener"><svg width="18"
+              height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor"
+              stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 14v6h12v-6M8 17h8m-7.7-3.6 7.4 1.5m-6.7-5 7 3m-4.4-7.1 5.6 4.8m-2.1-8 3.6 5.8" />
+            </svg>Stack Overflow</a></li>
+      </ul>
+    </nav>
 
     <!-- Open Source Section -->
     <section id="opensource" class="card" aria-labelledby="opensource-title">
@@ -174,8 +142,7 @@
         </li>
         <li>
           <span class="meta">2019</span>
-          <a href="https://ioapp.it/" target="_blank"
-            rel="noopener">IO App - PagoPA</a>
+          <a href="https://ioapp.it/" target="_blank" rel="noopener">IO App - PagoPA</a>
         </li>
       </ul>
     </section>
@@ -183,41 +150,73 @@
     <!-- Projects Section -->
     <section id="projects" class="card" aria-labelledby="projects-title">
       <h2 id="projects-title" class="card-title">Projects</h2>
-      <!-- Pinned and recently updated GitHub repositories, kept up to date by hand -->
-      <div id="pinnedGroup" class="project-group">
+      <div class="project-group">
         <h3 class="subhead">Pinned on GitHub</h3>
-        <ul id="pinnedList" class="list grid">
-          <li><span class="meta">JavaScript</span><a href="https://github.com/aymen94/wamr3d" target="_blank" rel="noopener">wamr3d</a><p class="small-text">WAMR3D: 3D engine in Rust and WebAssembly, built for WebGPU/WebGL, featuring the familiar three.js API.</p><div class="links"><a href="https://wamr3d.org/" target="_blank" rel="noopener">Website</a></div></li>
-          <li><span class="meta">Rust</span><a href="https://github.com/aymen94/NeuronDump" target="_blank" rel="noopener">NeuronDump</a><p class="small-text">Look inside any local LLM (GGUF from Ollama, LM Studio, Hugging Face, Jan, llama.cpp): layers, heads, vocabulary, chat template, weights. Explore it as a 3D graph, follow a token through every layer, edit it live (ablate, steer, ban, patch), diff two models, then bake or slim a new GGUF that still runs. CLI, web UI, browser demo. Runs 100% offline</p><div class="links"><a href="http://aymen.xyz/NeuronDump/" target="_blank" rel="noopener">Website</a></div></li>
-          <li><span class="meta">JavaScript</span><a href="https://github.com/aymen94/AI-on-Chrome-gemini-nano" target="_blank" rel="noopener">AI-on-Chrome-gemini-nano</a><div class="links"><a href="https://aymen94.github.io/AI-on-Chrome-gemini-nano/" target="_blank" rel="noopener">Website</a></div></li>
-          <li><span class="meta">TypeScript</span><a href="https://github.com/aymen94/simple-Blockchain" target="_blank" rel="noopener">simple-Blockchain</a><p class="small-text">small tutorial with code to try to create your blockchain 🔝</p><div class="links"><a href="https://medium.com/@aymennaghmouchi/how-to-work-blockchain-2b8631052335" target="_blank" rel="noopener">Website</a></div></li>
-          <li><span class="meta">TypeScript</span><a href="https://github.com/aymen94/WebRAGStudio" target="_blank" rel="noopener">WebRAGStudio</a><p class="small-text">A self-hostable RAG app for indexing documents locally and chatting with your data using OpenAI, Ollama, or compatible LLMs with chat</p></li>
-          <li><span class="meta">JavaScript</span><a href="https://github.com/aymen94/magicwebtools" target="_blank" rel="noopener">magicwebtools</a><div class="links"><a href="https://a4bcd9d7.magicwebtools.pages.dev" target="_blank" rel="noopener">Website</a></div></li>
+        <ul class="list grid">
+          <li><span class="meta">JavaScript</span><a href="https://github.com/aymen94/wamr3d" target="_blank"
+              rel="noopener">wamr3d</a>
+            <p class="small-text">A 3D engine written in Rust and WebAssembly, with WebGPU and WebGL backends and a
+              three.js-style API.</p>
+            <div class="links"><a href="https://wamr3d.org/" target="_blank" rel="noopener">Website</a></div>
+          </li>
+          <li><span class="meta">Rust</span><a href="https://github.com/aymen94/NeuronDump" target="_blank"
+              rel="noopener">NeuronDump</a>
+            <p class="small-text">A local toolkit for inspecting and editing GGUF models. It includes a CLI, web UI, and
+              browser demo, and works offline.</p>
+            <div class="links"><a href="http://aymen.xyz/NeuronDump/" target="_blank" rel="noopener">Website</a></div>
+          </li>
+          <li><span class="meta">JavaScript</span><a href="https://github.com/aymen94/AI-on-Chrome-gemini-nano"
+              target="_blank" rel="noopener">AI-on-Chrome-gemini-nano</a>
+            <div class="links"><a href="https://aymen94.github.io/AI-on-Chrome-gemini-nano/" target="_blank"
+                rel="noopener">Website</a></div>
+          </li>
+          <li><span class="meta">TypeScript</span><a href="https://github.com/aymen94/simple-Blockchain" target="_blank"
+              rel="noopener">simple-Blockchain</a>
+            <p class="small-text">small tutorial with code to try to create your blockchain 🔝</p>
+            <div class="links"><a href="https://medium.com/@aymennaghmouchi/how-to-work-blockchain-2b8631052335"
+                target="_blank" rel="noopener">Website</a></div>
+          </li>
+          <li><span class="meta">TypeScript</span><a href="https://github.com/aymen94/WebRAGStudio" target="_blank"
+              rel="noopener">WebRAGStudio</a>
+            <p class="small-text">A self-hosted app for indexing local documents and chatting with them through OpenAI,
+              Ollama, or compatible providers.</p>
+          </li>
+          <li><span class="meta">JavaScript</span><a href="https://github.com/aymen94/magicwebtools" target="_blank"
+              rel="noopener">magicwebtools</a>
+            <div class="links"><a href="https://a4bcd9d7.magicwebtools.pages.dev" target="_blank"
+                rel="noopener">Website</a></div>
+          </li>
         </ul>
       </div>
-      <div id="recentGroup" class="project-group">
+      <div class="project-group">
         <h3 class="subhead">Recently updated</h3>
-        <ul id="recentList" class="list grid">
-          <li><span class="meta">JavaScript - updated 2026-10-24</span><a href="https://github.com/aymen94/pocketgames" target="_blank" rel="noopener">pocketgames</a><p class="small-text">Free browser games, play instantly, no downloads. Rendered with WAMR3D.</p><div class="links"><a href="http://aymen.xyz/pocketgames/" target="_blank" rel="noopener">Website</a></div></li>
-          <li><span class="meta">TypeScript - updated 2026-10-23</span><a href="https://github.com/aymen94/cellverse" target="_blank" rel="noopener">cellverse</a><p class="small-text">Interactive 3D explorer of a eukaryotic animal cell, the chemical elements of life and biological macromolecules, with a rule-based molecular assembly lab, rendered with WAMR3D.</p><div class="links"><a href="http://aymen.xyz/cellverse/" target="_blank" rel="noopener">Website</a></div></li>
+        <ul class="list grid">
+          <li><span class="meta">JavaScript - updated 2026-10-24</span><a href="https://github.com/aymen94/pocketgames"
+              target="_blank" rel="noopener">pocketgames</a>
+            <p class="small-text">Free browser games, play instantly, no downloads. Rendered with WAMR3D.</p>
+            <div class="links"><a href="http://aymen.xyz/pocketgames/" target="_blank" rel="noopener">Website</a></div>
+          </li>
+          <li><span class="meta">TypeScript - updated 2026-10-23</span><a href="https://github.com/aymen94/cellverse"
+              target="_blank" rel="noopener">cellverse</a>
+            <p class="small-text">Interactive 3D explorer of a eukaryotic animal cell, the chemical elements of life and
+              biological macromolecules, with a rule-based molecular assembly lab, rendered with WAMR3D.</p>
+            <div class="links"><a href="http://aymen.xyz/cellverse/" target="_blank" rel="noopener">Website</a></div>
+          </li>
         </ul>
       </div>
       <h3 id="moreProjectsTitle" class="subhead">More projects</h3>
-      <ul id="projectList" class="list grid collapsed">
+      <ul class="list grid">
         <li>
           <span class="meta">JavaScript - npm</span>
           <a href="https://github.com/aymen94/snekweb" target="_blank" rel="noopener">snekweb</a>
-          <p class="small-text">A small, dependency-free Node.js HTTP framework with route and middleware APIs, Fetch-compatible requests and responses, and static-file serving.</p>
+          <p class="small-text">A small, dependency-free Node.js HTTP framework with route and middleware APIs,
+            Fetch-compatible requests and responses, and static-file serving.</p>
         </li>
         <li>
           <span class="meta">JavaScript - npm</span>
           <a href="https://github.com/aymen94/node-ipconfig" target="_blank" rel="noopener">node-ipconfig</a>
-          <p class="small-text">A safe, promise-based API for parsing Windows network configuration from ipconfig.exe, with JSON, XML, YAML, CSV and NDJSON output.</p>
-        </li>
-        <li hidden>
-          <span class="meta">TypeScript - Next.js</span>
-          <a href="https://github.com/aymen94/WebRAGStudio" target="_blank" rel="noopener">WebRAGStudio</a>
-          <p class="small-text">A self-hosted RAG workspace for indexing local documents and chatting with them through OpenAI, Ollama or compatible LLM providers.</p>
+          <p class="small-text">A safe, promise-based API for parsing Windows network configuration from ipconfig.exe,
+            with JSON, XML, YAML, CSV and NDJSON output.</p>
         </li>
         <li>
           <span class="meta">Next.js</span>
@@ -230,13 +229,6 @@
           <a href="https://github.com/aymen94/devblog" target="_blank" rel="noopener">devblog</a>
           <p class="small-text">A fast, Markdown-first blogging platform with tags, dark mode, reading time and
             SEO-ready output.</p>
-        </li>
-        <li hidden>
-          <span class="meta">JavaScript</span>
-          <a href="https://aymen.xyz/AI-on-Chrome-gemini-nano/" target="_blank" rel="noopener">AI on Chrome - Gemini
-            Nano</a>
-          <p class="small-text">An on-device AI demo that runs fully offline, built on Chrome's built-in APIs and Gemini
-            Nano.</p>
         </li>
         <li>
           <span class="meta">Java</span>
@@ -253,66 +245,22 @@
         <li>
           <span class="meta">TypeScript - npm</span>
           <a href="https://github.com/aymen94/imgproxyclientjs" target="_blank" rel="noopener">imgproxyclientjs</a>
-          <p class="small-text">A JavaScript client library for imgproxy that builds resized and processed image URLs. <a href="https://www.npmjs.com/package/imgproxyclientjs" target="_blank" rel="noopener">View on npm</a>.</p>
+          <p class="small-text">A JavaScript client library for imgproxy that builds resized and processed image URLs.
+            <a href="https://www.npmjs.com/package/imgproxyclientjs" target="_blank" rel="noopener">View on npm</a>.</p>
         </li>
         <li>
           <span class="meta">WebVR</span>
           <a href="https://aymen.xyz/3d-solar-system/" target="_blank" rel="noopener">3D Solar System</a>
           <p class="small-text">An interactive 3D model of the Solar System with WebVR support.</p>
         </li>
-        <li>
-          <span class="meta">React</span>
-          <a href="https://github.com/aymen94/Cryptovalue-React" target="_blank" rel="noopener">Cryptovalue</a>
-          <p class="small-text">A real-time cryptocurrency price dashboard.</p>
-        </li>
-        <li>
-          <span class="meta">Java</span>
-          <a href="https://github.com/aymen94/Games-Center" target="_blank" rel="noopener">Games Center</a>
-          <p class="small-text">A desktop game store and library manager, similar to Steam, built with Java Swing and
-            MySQL.</p>
-        </li>
       </ul>
-      <div class="more">
-        <!-- Only used with JS; without JS every project is visible -->
-        <button id="projectsToggle" class="pill" type="button" aria-controls="projectList" aria-expanded="false">Show all 10 projects</button>
-        <a class="pill" href="https://github.com/aymen94?tab=repositories" target="_blank" rel="noopener">All GitHub repositories</a>
-        <a class="pill" href="https://www.npmjs.com/~aymen94" target="_blank" rel="noopener">npm packages</a>
-      </div>
-    </section>
-
-        <!-- Experience Section: compact; the full history lives on LinkedIn -->
-    <section id="experience" class="card" aria-labelledby="experience-title">
-      <h2 id="experience-title" class="card-title">Experience</h2>
-      <ul class="list">
-        <li>
-          <span class="meta">Acer - 2024 - Present - Ticino, CH</span>
-          <strong>Full Stack Engineer</strong>
-        </li>
-        <li>
-          <span class="meta">Acer - 2022 - 2024 - Ticino, CH</span>
-          <strong>Integration Developer</strong>
-        </li>
-        <li>
-          <span class="meta">Cryms - 2021 - 2022 - Ticino, CH</span>
-          <strong>Full Stack Developer</strong>
-        </li>
-        <li>
-          <span class="meta">UniCredit - 2020 - 2021 - Milan, IT</span>
-          <strong>Software Engineer</strong>
-        </li>
-        <li>
-          <span class="meta">NTT DATA Italia - 2019 - 2020 - Naples, IT</span>
-          <strong>Software Development Engineer</strong>
-        </li>
-      </ul>
-      <div class="more">
-        <a class="pill" href="https://www.linkedin.com/in/aymennaghmouchi/" target="_blank" rel="noopener">Full history on LinkedIn</a>
-      </div>
+      <p><a href="https://github.com/aymen94?tab=repositories" target="_blank" rel="noopener">Browse all my repositories
+          on GitHub</a></p>
     </section>
 
     <!-- Articles Section -->
-    <section id="articles" class="card" aria-labelledby="articles-title">
-      <h2 id="articles-title" class="card-title">Articles</h2>
+    <section id="writing" class="card" aria-labelledby="articles-title">
+      <h2 id="articles-title" class="card-title">Articles &amp; talks</h2>
       <ul class="list">
         <li>
           <span class="meta">2019</span>
@@ -328,11 +276,7 @@
           <p class="small-text">A hands-on TypeScript tutorial for building a simple blockchain from scratch.</p>
         </li>
       </ul>
-    </section>
-
-    <!-- Talks & Achievements Section -->
-    <section id="achievements" class="card" aria-labelledby="achievements-title">
-      <h2 id="achievements-title" class="card-title">Talks &amp; Achievements</h2>
+      <h3 id="achievements-title" class="subhead">Talks &amp; community</h3>
       <ul class="list">
         <li>
           <span class="meta">2020 - Present</span>
@@ -368,10 +312,7 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <p>Let’s connect on <a href="https://www.linkedin.com/in/aymennaghmouchi/" target="_blank"
-        rel="noopener">LinkedIn</a>!</p>
-  </footer>
+  <script src="/assets/js/main.min.js" defer></script>
 </body>
 
 </html>

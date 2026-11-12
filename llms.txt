@@ -1,13 +1,13 @@
 # Aymen Naghmouchi
 
-> Personal site of Aymen Naghmouchi, a Software Engineer based in Ticino, Switzerland. Node.js website maintainer, open source contributor to Node.js and Jakarta EE, and a Google Summer of Code 2019 alumnus.
+> Personal site of Aymen Naghmouchi, a full-stack software engineer based in Ticino, Switzerland. Node.js website maintainer and open source contributor, with projects in Rust, JavaScript, and TypeScript.
 
-The site is a single page at https://aymen.xyz/ with sections for open source work, projects, experience, articles and talks. Project data comes from GitHub. Several projects are hosted as subpaths of this domain (for example https://aymen.xyz/NeuronDump/).
+The site is a single page at https://aymen.xyz/ with sections for open source work, projects, articles and talks. Project data comes from GitHub. Several projects are hosted as subpaths of this domain (for example https://aymen.xyz/NeuronDump/).
 
 ## Profiles
 
 - [GitHub](https://github.com/aymen94): source code for all projects
-- [LinkedIn](https://www.linkedin.com/in/aymennaghmouchi/): full work history
+- [LinkedIn](https://www.linkedin.com/in/aymennaghmouchi/): professional profile
 - [Stack Overflow](https://stackoverflow.com/users/4671263/aymen)
 - [Medium](https://medium.com/@aymennaghmouchi): articles
 - [npm](https://www.npmjs.com/~aymen94): published packages
@@ -21,11 +21,11 @@ The site is a single page at https://aymen.xyz/ with sections for open source wo
 
 ## Projects
 
-- [WAMR3D](https://wamr3d.org/): 3D engine in Rust and WebAssembly for WebGPU/WebGL with a three.js-style API
-- [NeuronDump](https://aymen.xyz/NeuronDump/): inspect, edit and diff local LLMs (GGUF), fully offline
+- [WAMR3D](https://wamr3d.org/): 3D engine written in Rust and WebAssembly, with WebGPU and WebGL backends and a three.js-style API
+- [NeuronDump](https://aymen.xyz/NeuronDump/): offline toolkit for inspecting and editing GGUF models, with a CLI, web UI, and browser demo
 - [snekweb](https://github.com/aymen94/snekweb): dependency-free Node.js HTTP framework
 - [node-ipconfig](https://github.com/aymen94/node-ipconfig): promise-based parser for Windows ipconfig output
-- [WebRAGStudio](https://github.com/aymen94/WebRAGStudio): self-hosted RAG workspace for local documents
+- [WebRAGStudio](https://github.com/aymen94/WebRAGStudio): self-hosted app for indexing local documents and chatting with them
 - [magicwebtools](https://magicwebtools.pages.dev): 900+ in-browser developer tools
 - [Project data (JSON)](https://aymen.xyz/data/projects.json): pinned and recently updated GitHub repositories
 

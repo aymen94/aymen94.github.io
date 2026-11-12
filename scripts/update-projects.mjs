@@ -26,7 +26,6 @@ const fromGraphql = (r) => ({
   description: r.description || "",
   homepage: r.homepageUrl || "",
   language: r.primaryLanguage?.name || "",
-  stars: r.stargazerCount,
   pushedAt: r.pushedAt,
 });
 
@@ -36,7 +35,6 @@ const fromRest = (r) => ({
   description: r.description || "",
   homepage: r.homepage || "",
   language: r.language || "",
-  stars: r.stargazers_count,
   pushedAt: r.pushed_at,
 });
 

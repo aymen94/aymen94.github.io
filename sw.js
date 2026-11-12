@@ -1,4 +1,4 @@
-const cacheName = "aymenn.xyz-v2.0.1";
+const cacheName = "aymenn.xyz-v2.0.2";
 const assets = [
     './',
     './index.html',
@@ -30,7 +30,6 @@ self.addEventListener('install', event => {
     })());
 });
 
-// Only the root site is handled here; anything else goes straight to the network.
 const isRootSite = url =>
     url.origin === self.location.origin &&
     (url.pathname === '/' ||
@@ -42,16 +41,13 @@ const isRootSite = url =>
 self.addEventListener('fetch', event => {
     if (event.request.method !== 'GET') return;
     const url = new URL(event.request.url);
-    // Same-origin paths outside the root site (other projects) are not touched.
     if (url.origin === self.location.origin ? !isRootSite(url) : !url.protocol.startsWith('http')) return;
     event.respondWith((async () => {
         const cachedResponse = await caches.match(event.request);
         if (cachedResponse) {
-            // Serve from cache
             return cachedResponse;
         }
-        // Perform network request and cache the response. Opaque (no-cors) responses
-        // are skipped: Chrome pads each one by several MB in storage quota.
+
         const fetchRes = await fetch(event.request);
         if (fetchRes.ok) {
             const cache = await caches.open(cacheName);
