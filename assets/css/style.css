@@ -149,8 +149,7 @@ a:hover,
 .hero {
   display: flex;
   align-items: flex-start;
-  gap: 1.25rem;
-  margin-bottom: 2rem;
+  justify-content: space-between;
 }
 
 .avatar {
@@ -250,14 +249,6 @@ h1 {
 }
 
 @media (max-width: 560px) {
-  .hero {
-    display: block;
-  }
-
-  .avatar {
-    margin-bottom: 1rem;
-  }
-
   .grid {
     grid-template-columns: 1fr;
   }
